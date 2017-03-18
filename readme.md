@@ -10,3 +10,5 @@ Front End: HTML, CSS, JavaScript
 Back End: php, MySQL
 
 Coordinator: Documentation
+
+![Alt text](/pic/Database.png)
