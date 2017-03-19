@@ -5,10 +5,9 @@
 An efficient way to organize your reading achievements and make use of collective intelligence
 
 ### 2. Tasks
-Front End: HTML, CSS, JavaScript
+#### Variable Define
+Reminder: The variable name should add "_" before real name.
 
-Back End: php, MySQL
-
-Coordinator: Documentation
+#### Database Design
 
 ![Alt text](/pic/Database.png)
