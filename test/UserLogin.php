@@ -1,3 +1,8 @@
+/**
+* This will authenticate the user login information from database
+* @param _username, _password
+* @return print 'Right!'' if success
+*/
 <?php
   $Uname = $_GET["_username"];
   $Upass = $_GET["_password"];

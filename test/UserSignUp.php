@@ -1,5 +1,5 @@
 /**
-* This code need to be modified in order to avoid duplicate
+* 
 */
 <?php
   $Uname = $_GET["_username"];
