@@ -9,5 +9,6 @@ An efficient way to organize your reading achievements and make use of collectiv
 Reminder: The variable name should add "_" before real name.
 
 #### Database Design
+You can directly import the database 'grouppj' from the database folder.
 
 ![Alt text](/pic/Database.png)
