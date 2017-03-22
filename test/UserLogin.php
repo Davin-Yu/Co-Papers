@@ -10,7 +10,7 @@
     exit;
   }
   $Uname = $_GET["_username"];
-  $Upass = $_GET["_password"];
+  $Upass = MD5($_GET["_password"]);
   $connection = mysql_connect("localhost","root","");
   mysql_select_db("grouppj", $connection);
   $result = mysql_query ("SELECT * FROM

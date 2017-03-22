@@ -5,7 +5,7 @@
 * @return print 'successful' if succeed inserting
 */
   $Uname = $_GET["_username"];
-  $Upass = $_GET["_password"];
+  $Upass = MD5($_GET["_password"]);   //encrpt the userpassword
   $Umail = $_GET["_mail"];
   $Ubio = $_GET["_bio"];
   if ($Uname == "" or $Upass == "") {
