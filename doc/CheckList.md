@@ -1,11 +1,19 @@
 ## 1. Main Function
 
 ### 1.1 HTML Page
-| Name (.html)    | Process   |
-| ----------------|:---------:|
-| MainPage        |           |
-| UserLogin       |           |
-| UserSignUp      | ✓         |
+| Name (.html)    | Process   | Description |
+| ----------------|:---------:|-------------|
+| MainPage        |           |             |
+| UserLogin       |           |             |
+| UserSignUp      | ✓         |             |
+| Login_Main      |           |             |
+| NoteCreate      |           |             |
+| MyNoteList      |           |             |
+| OtherNoteList   |           |             |
+| MyComment       |           |             |
+| OtherComment    |           |             ||
+
+
 
 ### 1.2 JavaScript
 
