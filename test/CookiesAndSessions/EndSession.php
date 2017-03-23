@@ -1,10 +1,10 @@
 <?php
 /**
-* This will end the using Session.
-* Typiclly can be used in log out.
+* This will end the using of Session.
+* This typiclly can be used in log out.
 */
   session_start();
-  echo 'You Log our as'.$_SESSION['username'];
+  // echo 'You Log our as'.$_SESSION['username'];
 
   session_destroy();
   unset($_SESSION['user_id']);

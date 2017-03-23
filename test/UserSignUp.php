@@ -1,7 +1,9 @@
 <?php
 /**
-* This will log user register info. to Database
-* @param _username, _password, _mail, _bio
+* This will log user register info. to Database.
+*
+* @author Davin-Yu
+* @param _username, _password, _mail, _bio from UserSignUp.html
 * @return print 'successful' if succeed inserting
 */
   $Uname = $_GET["_username"];

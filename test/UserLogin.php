@@ -1,8 +1,12 @@
 <?php
 /**
-* This will authenticate the user login information from database
-* @param _username, _password
-* @return print 'Right!...'' if success
+* This will authenticate the user login name and corresponding password from database.
+*
+* @author Davin-Yu
+* @param  _username  The username transmit from UserLogin.html
+* @param  _password  The password transmit from UserLogin.html
+* @return print if succeed login message as feedback
+* @see  #session_start()
 */
   session_start();  //This help to keep track of user info. from page to page
   if (!empty($_SESSION['user_id'])) {

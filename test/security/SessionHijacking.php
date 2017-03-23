@@ -1,6 +1,7 @@
 <? php
 /**
-* This record user IP address prevent hijacking happened
+* This record user IP address prevent hijacking happened.
+* @author Davin-Yu
 */
   session_start();
   $user_check = md5($_SERVER['HTTP_USER_AGENT'].$_SERVER['REMOTE_ADDR']);
