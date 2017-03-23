@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset=utf-8" />
+		<title>Co-Papers</title>
+		<style type = "text/css">
+			html{
+				width:100%;
+				height:100%;
+				font-family: Tahoma;
+				font-weight: bolder;
+			}
+			body{
+				width:100%;
+				height:100%;
+				text-align:center;
+			}
+			.user{
+				position:fixed;
+				font-size:15px;
+				right:5px;
+				top:5px;
+				z-index:99999;
+			}
+			.main{
+				margin:0 auto;
+			}
+			.title{
+				margin:0 auto;
+			}
+			.title h1{
+				text-shadow: 0px 0px 10px;
+				font-size:45px;
+				position:relative;
+				left:-20%;
+			}
+			.part2{
+				margin:0 auto;
+				width:500px;
+				height:300px;
+				border-width:medium;
+				border-style:solid;
+				border-radius:10px;
+				font-family: Tahoma;
+				font-size:20px;
+			}
+			.part2 label{
+				position:relative;
+				left:-25%;
+				display:block;
+				margin-top:10px;
+			}
+			.part2 #search1{
+				width:300px;
+				margin-bottom:10px;
+				padding:5px;
+				font-size:15px;
+				font-weight:bolder;
+				border-radius:10px; 
+				outline:none;
+				background-image:url(http://www.clker.com/cliparts/r/2/Q/h/3/L/system-search-hi.png);
+				background-repeat:no-repeat;
+				background-size: 21px 18px; 
+				background-position: 95%;
+			}
+			.part2 select{
+				width:315px;
+				margin-bottom:10px;
+				padding:5px;
+				font-size:15px;
+				font-weight:bolder;
+				border-radius:10px;
+			}
+			.part2 #button{
+				width:315px;
+				margin-top:20px;
+				margin-bottom:20px;
+				padding:5px;
+				font-size:15px;
+				font-weight:bolder;
+				border-radius:10px;
+				background-color:#4a77d4;
+				color:#fff;
+			}
+			.part3{
+				margin:0 auto;
+				width:1200px;
+				height:350px;
+				border-width:medium;
+				border-style:solid;
+				border-radius:10px;
+				font-family: Tahoma;
+				font-size:20px;
+			}
+			.part3 span{
+				float:left;
+				display:block;
+			}
+			.part3 .spantitle1{
+				float:left;
+			}
+			.part3 .spantitle2{
+				float:left;
+			}
+			.part3 h4{
+				font-size:19px;
+			}
+			.part3 .division{
+				float:left;
+				padding:350px 6px 0px 6px;
+				border-left: 4px solid #000;
+				margin-right:50px;
+			}
+			.part3 .division1{
+				float:left;
+				padding:250px 6px 0px 6px;
+				border-left: 4px solid #000;
+			}
+			.part3 .content{
+				float:left;
+				font-size:15px;
+				margin-top:-25px;
+				margin-left:20px;
+				margin-right:25px;
+				
+			}
+			.part3 .content h5{
+				font-size:16px;	
+			}
+			.part3 .content .creater{
+				margin-top:-25px;
+			}
+			.part3 .content .note{
+				width:240px;
+				height:120px;
+				word-wrap:break-word; 
+				word-break:normal;
+				border-style:solid;
+				border-radius:10px;
+				overflow:auto;
+			}
+			.part3 .buttondiv{
+				position:relative;
+				top:20px;
+				left:-160px;
+			}
+			.part3 .buttondiv .spanbutton1{
+				float:left;
+				margin-left:-40px;
+			}
+			.part3 .buttondiv .spanbutton2{
+				float:right;
+				margin-right:-40px;
+			}
+			.part3 .table1{
+			margin-left:20px;
+				width:500px;
+				height:250px;
+				overflow:auto;
+			}
+			.part3 table{
+				table-layout:fixed;
+				word-wrap:break-word; 
+				word-break:normal;
+			}
+			.part3 .table td,th{
+				width:200px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="user">
+			Hello username | New Note | Quit
+		</div>
+		<div class = "main">
+			<div class="title">
+				<h1>Co-Papers</h1>
+			</div>
+			<form method="post">
+				<div class="part2">
+				<label class="text-base" for ="Search">Search</label>
+				<br>
+				<input type="text" id = "search1" name="text" placeholder="Search for...">
+					<br>
+					<label class="text-base" for="topics">List Topics</label><br>
+					<select>
+						<option select="selected" value = "Choose">Choose...</option>
+						<option value = "Biochamisry">Biochamisry</option>
+						<option value = "Computer Science">Computer Science</option>
+						<option value = "Chemical">Chemical</option>
+						<option value = "Literature">Literature</option>
+						<option value = "Math">Math</option>
+						<option value = "Medichine">Medicine</option>
+						<option value = "Physics">Physics</option>
+					</select>
+					<br>
+					<input type="submit"  id="button" value="Search">
+				</div>
+				<br><br>
+				<div class="part3">
+					<span class="spantitle1">
+						<div>
+							<h4>Hottest &nbsp&nbsp&nbsp&nbsp Notes</h4>
+							<span class="content">
+								<h5>title</h5>
+								<p class="creater">name</p>
+								<p class="note">asdasdasdaasdasdasdasdasd</p>
+							</span>
+							<span class="division1"></span>
+							<span class="content">
+								<h5>title</h5>
+								<p class="creater">name2</p>
+								<p class="note">asdasdasdasdfsdfsdfsdfsdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd
+								fsdfasdasdaasdasdasdasdasdasdasdasdasdasdsdasdasdasdasdasdasdasdasdasdasdasdasdasd</p>
+							</span>
+						</div>
+						<div class="buttondiv">
+							<span class="spanbutton1">
+								<input type="submit"  id="button1" value="Last">
+							</span>
+							<span class="spanbutton2">
+								<input type="submit"  id="button2" value="Next">
+							</span>
+						</div>
+					</span>
+					<span class="division"></span>
+					<span class="spantitle2">
+						<h4>Followed NewestNote</h4>
+						<div class="table1">
+						<table class="table" border="1px">
+							<tr>
+							<th>Name</th>
+							<th>Note</th>
+							</tr>
+							<tr>
+							<td>Bale</td>
+							<td>Hahahahahahahahaha</td>
+							</tr>
+							<tr>
+							<td>Tom</td>
+							<td>there is nothing you can see</td>
+							</tr>
+							<tr>
+							<td>Tom</td>
+							<td>there is nothing you can see</td>
+							</tr>
+							<tr>
+							<td>Tom</td>
+							<td>there is nothing you can see</td>
+							</tr>
+							<tr>
+							<td>Tom</td>
+							<td>there is nothing you can see</td>
+							</tr>
+							<tr>
+							<td>Tom</td>
+							<td>there is nothing you can see</td>
+							</tr>
+							<tr>
+							<td>Tom</td>
+							<td>there is nothing you can see</td>
+							</tr>
+							<tr>
+							<td>Tom</td>
+							<td>there is nothing you can see</td>
+							</tr>
+						</table>
+						</div>
+					</span>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
