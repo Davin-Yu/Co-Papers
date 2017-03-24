@@ -17,6 +17,9 @@
 | MyViewSearchedResult  | ✓         |             ||
 
 ### 1.2 JavaScript
+| Name (.html)          | Process   | Description |
+| ----------------------|:---------:|-------------|
+| SignUpValidationCheck |           |             ||
 
 ### 1.3 PHP
 | Name (.php)          | Process   | Description |
