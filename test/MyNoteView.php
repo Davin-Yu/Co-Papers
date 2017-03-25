@@ -10,7 +10,7 @@
 		require('getMyNoteView.php');
 	 ?>
 		<div class="user">
-			Hello username | Home Page | Quit
+			Hello username <!-- <?php echo $_SESSION["user_id"]?> --> | Home Page | Quit
 		</div>
 		<div class="main">
 			<div class="part1">
@@ -37,7 +37,7 @@
 					<input type="submit"  name="CreateANew" id="button1" value="Create a New">
 					<input type="button"  name="Edit" id="button1" value="Edit">
 				</div>
-			</form>
+		 </form>
 		</div>
 	</body>
 
