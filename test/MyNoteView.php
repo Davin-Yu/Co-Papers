@@ -20,95 +20,18 @@
 			</div>
 			<form>
 				<div class="part2">
-					<h2>Ubisoft</h2>
+					<h2><?php echo $_article ?></h2>
 					<div class="content">
-						<p> <?php echo "pangzihhh"?>
+						<p> <?php echo $_note_content ?>
 						</p>
 					</div>
 					<div class="URL">
-					<p>Link: <a href="url(https://www.ubisoft.com/en-GB/)">https://www.ubisoft.com/en-GB/</a></p>
+					<p>Link: <a href="<?php echo $_article_url?>"> <?php echo $_article_url ?></a></p>
 					</div>
-					<hr />
-					<div class="comt">
-						<div class="comment">
-							<div>
-							<span class="username">
-							Bale
-							</span>
-							<span class="usercomments">
-								<p>Yes, the game of the Ubisoft is very funny. I like it.....<p>
-							</span>
-							</div>
-							<br><br><br>
-							<div class="reply">
-							<input type="button"  name="Reply" id="button" value="Reply">
-							</div>
-						</div>
-					</div>
-					<div class="comt">
-						<div class="comment">
-							<div>
-							<span class="username">
-							Jim
-							</span>
-							<span class="usercomments">
-								<p>Maybe the service, need to modify...yes<p>
-							</span>
-							</div>
-							<br><br><br>
-							<div class="reply">
-							<input type="button"  name="Reply" id="button" value="Reply">
-							</div>
-						</div>
-					</div>
-					<div class="comt">
-						<div class="comment">
-							<div>
-							<span class="username">
-							Tom
-							</span>
-							<span class="usercomments">
-								<p><p>
-							</span>
-							</div>
-							<br><br><br>
-							<div class="reply">
-							<input type="button"  name="Reply" id="button" value="Reply">
-							</div>
-						</div>
-					</div>
-					<div class="comt">
-						<div class="comment">
-							<div>
-							<span class="username">
-							Jane
-							</span>
-							<span class="usercomments">
-								<p>I saw the building of the Ubi in Paris<p>
-							</span>
-							</div>
-							<br><br><br>
-							<div class="reply">
-							<input type="button"  name="Reply" id="button" value="Reply">
-							</div>
-						</div>
-					</div>
-					<div class="comt">
-						<div class="comment">
-							<div>
-							<span class="username">
-							XXX
-							</span>
-							<span class="usercomments">
-								<p>nothing<p>
-							</span>
-							</div>
-							<br><br><br>
-							<div class="reply">
-							<input type="button"  name="Reply" id="button" value="Reply">
-							</div>
-						</div>
-					</div>
+					<hr/>
+					<?php
+							require('getComment.php')
+					 ?>
 				</div>
 				<div class="part3">
 					<input type="submit"  name="CreateANew" id="button1" value="Create a New">
