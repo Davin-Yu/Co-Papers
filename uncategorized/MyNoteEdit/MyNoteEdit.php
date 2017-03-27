@@ -1,11 +1,11 @@
 <?php
 		require('session.php');
-
+		
 	 ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<meta charset="utf-8" />
+	<meta charset=utf-8" />
 		<title>Create New Notes</title>
 		<style type = "text/css">
 			html{
@@ -104,7 +104,7 @@
 				background-color:#4a77d4;
 				color:#fff;
 			}
-
+				
 		</style>
 	</head>
 	<body>
@@ -124,7 +124,7 @@
 
 						<label class="text-base" for ="Paper Title">Paper Title</label><br>
 						<input name = "PaperTitle" required="required" type="text" value="<?=$_article?>" />
-
+		
 					</div>
 					<div class="div2">
 						<label class="text-base" for="topics">List Topics</label><br>
@@ -147,8 +147,8 @@
 						<select name = "existentTag">
 							<option select="selected" value = "">Choose...</option>
 									<?php
-										require('tag.php');
-	 								 ?>
+		require('tag.php');
+	 ?>
 						</select>
 					</div>
 					<div class="div4">
@@ -163,9 +163,9 @@
 						<input type="submit" id="button" value="Save" name="save">
 						<input type="submit" id="button" value="Publicize" name="publicize">
 					</div>
-
+				
 			</div>
 		</div>
-		</form>
+		</form> 
 	</body>
 </html>
