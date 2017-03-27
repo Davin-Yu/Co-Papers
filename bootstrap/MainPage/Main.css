@@ -1,0 +1,133 @@
+html{
+	width:100%;
+	height:100%;
+}
+body{
+	width:100%;
+	height:100%;
+	background-color:#f5f5f5;
+	text-align:center;
+	min-width:660px
+}
+.col-md-11{
+	height:60px;
+	width:100%;
+	margin:0 auto;
+	background-color:#96cdcd;
+}
+#div1{
+	height: 20%; 
+	width: 50%;
+}
+#div1 p{
+	text-align:left;
+	margin-left:42px;	
+	padding: 6px 0 0 0; 
+	font-family: Georgia,serif; 
+	font-size: 30px; 
+	color: #ffffff;
+}
+.LOGIN{
+	position:fixed;
+	right:10px;
+	top:-5px;
+	z-index:99999;
+	width:70px;
+	height:60px;
+	background-color:#96cdcd;
+}
+.LOGIN p{
+	text-align: center; 
+	padding: 18px 0 20px 0; 
+	font-family: Georgia,serif; 
+	font-size: 18px; 
+	color: #ffffff;
+}
+#mainsearch{
+	height: 540px; 
+	background-image: url(banner.jpg); 
+	background-size: cover;
+}
+#Advance{
+	text-align: center; 
+	padding: 85px 0 20px 40px; 
+	font-family: Georgia,serif; 
+	font-size: 38px; 
+	color: #ffffff;
+}
+#Discover{
+	text-align: center;
+	padding: 20px 0 15px 40px; 
+	font-family: Georgia,serif; 
+	font-size: 26px; 
+	color: #ffffff;
+}
+#div3{
+	height: 250px; 
+	padding: 35px 0 0 230px;
+}
+#searchKey{
+	width:250px;
+}
+#searchKey input{
+	width:250px;
+}
+#div4{
+	width:250px;
+}
+#div4 select{
+	width:250px;
+}
+#button{
+	padding: 20px 0 0 55px;
+	width:250px;
+}
+#button button{
+	height:43px;
+	margin-left:-25px;
+}
+#hottest{
+	background-color: #e8e8e8;
+}
+#hottest p{
+	text-align: center; 
+	padding: 10px 0 5px 0; 
+	font-family: Georgia,serif; 
+	font-size: 36px;
+}
+#div9{
+	height: 400px;
+}
+#div9 #content{
+	height:400px;
+	text-align:center;
+}
+#div9 #content .note{
+	width:440px;
+	height:250px;
+	margin-left:470px;
+	word-wrap:break-word; 
+	word-break:normal;
+	border-style:solid;
+	border-radius:10px;
+	overflow:auto;
+}
+#footer{
+	height: 50px; 
+	border-top: 1px solid #696969;
+}
+#footer-span{
+	margin-left: -5px;
+}
+#footer-span p{
+	font-family: Georgia,serif;
+	font-size: 15px; 
+	color: #696969; 
+	padding-top: 10px;
+}
+#footer-porperty{
+	font-family: Georgia,serif;
+	font-size: 15px; 
+	color: #696969; 
+	padding: 10px 0 0 250px;
+}
