@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8" />
 		<title>PersonalView</title>
-			<link href="Style1.css" type=text/css rel=stylesheet>
+			<link href="../Style1.css" type=text/css rel=stylesheet>
 	</head>
 	<body>
 		<?php
