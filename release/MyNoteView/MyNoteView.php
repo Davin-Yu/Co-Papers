@@ -10,7 +10,7 @@
 		require('getMyNoteView.php');
 	 ?>
 		<div class="user">
-			Hello <?php echo $_SESSION["user_id"]?>  | Home Page | Quit
+			Hello <?php echo $_SESSION["username"]?>  | Home Page | Quit
 		</div>
 		<div class="main">
 			<div class="part1">
