@@ -2,8 +2,8 @@
 | Name (.html)          | Process   | Description |
 | ----------------------|:---------:|-------------|
 | MainPage              |           |             |
-| UserLogin             | checked          |             |
-| UserSignUp            |           |             |
+| UserLogin             | 1st checked          |             |
+| UserSignUp            | 1st checked          | Need Java script for checking pattern. Need Verification Code |
 | Login_Main            |           |             |
 | NoteCreate            |           |             |
 | MyView                |           |             |

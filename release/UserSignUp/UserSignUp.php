@@ -35,7 +35,16 @@
        $query = "INSERT INTO Users VALUES ('$count','$Uname','$Upass','$Umail','$Ubio')";
        $result2 = mysql_query($query);
        if ($result2){
-         echo "successful";
+         echo <<< eod
+         <html>
+           <head>
+             <meta http-equiv="refresh" content="2;url= ../Login_Main/Login_Main.php">
+           </head>
+           <body>
+             Sign Up Successfully!
+           </body>
+         </html>
+eod;
        }
      }
   }
