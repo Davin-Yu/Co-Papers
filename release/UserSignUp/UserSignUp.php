@@ -35,6 +35,8 @@
        $query = "INSERT INTO Users VALUES ('$count','$Uname','$Upass','$Umail','$Ubio')";
        $result2 = mysql_query($query);
        if ($result2){
+         $_SESSION['user_id'] = $count;
+         $_SESSION['username'] = $Uname;
          echo <<< eod
          <html>
            <head>
@@ -45,6 +47,7 @@
            </body>
          </html>
 eod;
+        exit;
        }
      }
   }
