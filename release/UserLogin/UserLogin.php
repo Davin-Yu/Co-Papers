@@ -19,7 +19,6 @@
   mysql_select_db("grouppj", $connection);
   $result = mysql_query ("SELECT * FROM
                           Users", $connection);
-  print "\n";
   $flag = false;
   while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     if ($row[1] == $Uname and $row[2] == $Upass) {
@@ -31,8 +30,8 @@
   if ($flag == true) {
     $_SESSION['user_id'] = $db_user_id;
     $_SESSION['username'] = $db_username;
-    echo "Right!";
-    echo "You have login as ".$_SESSION['username'];
+    header("Location: ../Login_Main/Login_Main.php");  //Needs to be change to Main Page
+    exit;
   }else {
     echo "Wrong!";
   }
