@@ -1,3 +1,4 @@
+# First Period CheckList
 ## 1. Main Function
 
 ### 1.1 HTML Page
@@ -30,12 +31,12 @@
 | Login_Main            | ✓         |             |
 | NoteCreate            | ✓         |             |
 | MyView                | ✓         |             |
-| OtherView             |           |             |
-| MyNoteView            |           |             |
-| OtherNoteView         |           |             |
-| MyNoteEdit            |           |             |
-| SearchedResult        |           |             |
-| MyViewSearchedResult  |           |             ||
+| OtherView             | ✓         |             |
+| MyNoteView            | ✓         |             |
+| OtherNoteView         | ✓         |             |
+| MyNoteEdit            | ✓         |             |
+| SearchedResult        | ✓         |             |
+| MyViewSearchedResult  | ✓         |             ||
 
 ## 2. Others
 

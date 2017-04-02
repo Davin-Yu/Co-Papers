@@ -2,10 +2,10 @@
 | Name (.html)          | Process   | Description |
 | ----------------------|:---------:|-------------|
 | MainPage              |           |             |
-| UserLogin             | 1st checked          |             |
-| UserSignUp            | 1st checked          | Need Java script for checking pattern. Need Verification Code |
+| UserLogin             |           |             |
+| UserSignUp            |   ✓       |             |
 | Login_Main            |           |             |
-| NoteCreate            |           |             |
+| NoteCreate            |   ✓       |             |
 | MyView                |           |             |
 | OtherView             |           |             |
 | MyNoteView            |           |             |
@@ -13,3 +13,7 @@
 | MyNoteEdit            |           |             |
 | SearchedResult        |           |             |
 | MyViewSearchedResult  |           |             ||
+
+### Comment
+1. Need to add Verification code
+2. Need to add javascript for user sign up authentication
