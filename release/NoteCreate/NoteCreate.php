@@ -50,7 +50,7 @@
             </div>
             <!--Form-->
             <div class="Create-Form">
-                <form role="form" action="create_add.php" method="POST">
+                <form role="form" action="insertNotetoDB.php" method="POST">
                     <div class="form-group">
                         <!--Paper Title-->
                         <label for="name">Paper Title</label>
@@ -88,14 +88,10 @@
                             <label for="name">Tags</label>
                             <br>
                             <input type="radio" name="optionsRadiosinline" id="New-tag-radio" value="option1" checked>New Tag
-                            <input type="text" class="form-control" required="required" name="_tag" id="New-Tag-name" value="Enter a new tag">
+                            <input type="text" class="form-control" name="_tag1" id="New-Tag-name" value="Enter a new tag">
                             <input type="radio" name="optionsRadiosinline" id="Create-tag-radio" value="option2">Existent Tag
-                            <select name="_tag" required="required" class="form-control" id="Existent-tag-name">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <select name="_tag2"  class="form-control" id="Existent-tag-name">
+                                <?php require("getTagfromDB.php") ?>
                             </select>
                         </div>
                         <div class="support-hint-tag">

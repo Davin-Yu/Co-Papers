@@ -14,14 +14,5 @@
   session_destroy();
   unset($_SESSION['user_id']);
   unset($_SESSION['username']);
-  echo <<< eod
-    <html>
-      <head>
-        <meta http-equiv="refresh" content="2;url= ../MainPage/MainPage.php">
-      </head>
-      <body>
-        Log Out Successfully!
-      </body>
-    </html>
-eod;
+  echo  "<script type='text/javascript'>alert('Log Out Successfully');location.href='../MainPage/MainPage.php'</script>";
 ?>

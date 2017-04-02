@@ -37,17 +37,7 @@
        if ($result2){
          $_SESSION['user_id'] = $count;
          $_SESSION['username'] = $Uname;
-         echo <<< eod
-         <html>
-           <head>
-             <meta http-equiv="refresh" content="2;url= ../Login_Main/Login_Main.php">
-           </head>
-           <body>
-             Sign Up Successfully!
-           </body>
-         </html>
-eod;
-        exit;
+         echo  "<script type='text/javascript'>alert('Sign Up Successfully!');location.href='../Login_Main/Login_Main.php'</script>";
        }
      }
   }
