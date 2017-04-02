@@ -33,7 +33,7 @@
                 <h4>You can use any new name as the user name for your new Co-Papers account.</h4>
             </div>
             <div class="Account-Logo">
-                <img src="Account-logo.png" alt="note-logo">
+                <img src="account-logo.png" alt="note-logo">
             </div>
             <!--Form-->
             <div class="Create-Form">
@@ -69,7 +69,7 @@
                     <!--Email-->
                     <div class="form-group">
                         <label for="name" >Email</label>
-                        <input type="email" class="form-control" name="_mail" required="required" id="email" placeholder="someone@example.com">
+                        <input type="email" class="form-control" name="_mail" id="email" placeholder="someone@example.com">
                         <div class="support-hint">
                             <div class="triangle-right"></div>
                             <div class="hint">

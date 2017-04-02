@@ -6,13 +6,13 @@
 * @param _username, _password, _mail, _bio from UserSignUp.html
 * @return print 'successful' if succeed inserting
 */
+  session_start();
   $Uname = $_GET["_username"];
   $Upass = MD5($_GET["_password"]);   //encrpt the userpassword
   $Umail = $_GET["_mail"];
   $Ubio = $_GET["_bio"];
-  if ($Uname == "" or $Upass == "") {
-    /* Check if user provide both username and password */
-    echo "Please provide sufficant information";
+  if ($Upass != MD5($_GET["_password2"])) {
+    echo  "<script type='text/javascript'>alert('Password Re-enter Error');location.href='UserSignUp.php'</script>";
   } else {
     $connection = mysql_connect("localhost","root","");
     mysql_select_db("grouppj", $connection);
@@ -26,7 +26,7 @@
        }
      }
      if ($flag == true) {
-       echo "Username invalide";
+       echo  "<script type='text/javascript'>alert('Username Exists');location.href='UserSignUp.php'</script>";
      }else {
        /* log into database */
        $result = mysql_query("SELECT COUNT(*) FROM Users");

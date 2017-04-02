@@ -30,7 +30,7 @@
   if ($flag == true) {
     $_SESSION['user_id'] = $db_user_id;
     $_SESSION['username'] = $db_username;
-    header("Location: ../Login_Main/Login_Main.php");  //Needs to be change to Main Page
+    header("Location: ../Login_Main/Login_Main.php");
     exit;
   }else {
     echo "Wrong!";
