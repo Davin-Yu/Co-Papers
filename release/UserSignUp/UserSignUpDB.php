@@ -14,8 +14,7 @@
   if ($Upass != MD5($_GET["_password2"])) {
     echo  "<script type='text/javascript'>alert('Password Re-enter Error');location.href='UserSignUp.php'</script>";
   } else {
-    $connection = mysql_connect("localhost","root","");
-    mysql_select_db("grouppj", $connection);
+    require("../connectDB.php");
     /* Check if have registered or not */
     $res = mysql_query ("SELECT * FROM
                          Users", $connection);
