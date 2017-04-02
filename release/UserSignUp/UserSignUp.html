@@ -1,49 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	<meta charset="utf-8"/>
-		<title>Registration</title>
-		<link href="../Style1.css" type=text/css rel=stylesheet>
-		</style>
-	</head>
-	<body>
-		<div class="main">
-			<div class="part1">
-				<h1>
-					Create an account
-				</h1>
-				<p class="p1">
-					You can use any name or email address<br>
-					as the user name for your new account
-				</p>
-			</div>
-			<p>
-				<div class="register">
-				<form name="signup"  action = "UserSignUp.php" method ="GET">
-					<div class = "pass">
-						<label class="text-base" for ="User name">User name</label><br>
-						<input name = "_username" required="required" type="text"/>
-						<br>
-						<label class="text-base" for ="Password" >Password</label><br>
-						<input name = "_password" required="required" type="password"/>
-						<span class="reminder">8-character mimnmum, case senstive</span>
-						<label class="text-base" for ="Reenter Password">Reenter Password</label><br>
-						<input name = "_rpassword" required="required" type="password"/>
-					</div>
-					<div class="Email">
-						<label class="text-base" for ="E-mail">E-mail</label><br>
-						<input name = "_mail" required="required" type="email"/>
-					</div>
-					<div class="BIO">
-						<label class="text-base" for ="Biography">Biography</label><br>
-						<textarea name="_bio"></textarea>
-					</div>
-					<div class="button">
-						<input title="Create account" type="submit" value="Create account" />
-					</div>
-				</form>
-				</div>
-			</p>
-		</div>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<title>AccountCreate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1" />
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="AccountCreate.css">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+        <!--Top Navgiation-->
+		<nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!--Logo & Button section -->
+                <div class="navbar-header">
+                    <img src="LOGO.png" alt="logo">
+                </div>
+                <!-- Menu section -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="../MainPage/MainPage.php">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Main Content-->
+        <div class="center-block">
+            <div class="Page-Title">
+                <p>Creating A New Account</p>
+                <h4>You can use any new name as the user name for your new Co-Papers account.</h4>
+            </div>
+            <div class="Account-Logo">
+                <img src="Account-logo.png" alt="note-logo">
+            </div>
+            <!--Form-->
+            <div class="Create-Form">
+                <form role="form" action="UserSignUpDB.php" method="GET">
+                    <div class="form-group">
+                        <!--UserName-->
+                        <label for="name">UserName</label>
+                        <input type="text" class="form-control" name="_username" required="required" id="username" placeholder="Enter a username">
+                        <div class="support-hint">
+                            <div class="triangle-right"></div>
+                            <div class="hint">
+                                <p>Username as your log account</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--PassWord-->
+                    <div class="form-group">
+                        <label for="name">Password</label>
+                        <input type="password" class="form-control" name="_password" required="required" id="password">
+                        <div class="support-hint1">
+                            <div class="triangle-right"></div>
+                            <div class="hint1">
+                                <p>Passwords must have at least 8 characters and contain at least two of the following: uppercase letters, lowercase letters, numbers, and symbols.</p>
+                            </div>
+                        </div>
+												<div class="text-caption">8-character minimum; case sensitive</div>
+                    </div>
+                    <!--Reenter Password-->
+                    <div class="form-group">
+                        <label for="name">Reenter Password</label>
+                        <input type="password" class="form-control" name="_password2" required="required" id="password">
+                    </div>
+                    <!--Email-->
+                    <div class="form-group">
+                        <label for="name" >Email</label>
+                        <input type="email" class="form-control" name="_mail" required="required" id="email" placeholder="someone@example.com">
+                        <div class="support-hint">
+                            <div class="triangle-right"></div>
+                            <div class="hint">
+                                <p>Enter you email address</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Note box-->
+                    <div class="form-group">
+                        <label for="name">Biography</label>
+                        <textarea class="form-control" name="_bio" rows="14"></textarea>
+                        <div class="support-hint-BIO">
+                            <div class="triangle-right"></div>
+                            <div class="hint">
+                                <p>Informations about yourself.</p>
+                            </div>
+                        </div>
+                    </div>
+										<!--Bottom button-->
+				            <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+				                <div class="container-fluid">
+				                    <div class="center-block" id="button-block">
+				                        <button type="submit" class="btn btn-primary btn-lg" id="create">Create</button>
+				                    </div>
+				                </div>
+				            </nav>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
