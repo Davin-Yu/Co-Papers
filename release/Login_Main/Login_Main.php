@@ -38,17 +38,7 @@
 					<span class="spantitle1">
 						<div>
 							<h4>Hottest Notes</h4>
-							<?php //require(getHotNote.php) ?>
-							<span class="content">
-								<h5>title</h5>
-								<p class="creater">name</p>
-								<p class="note"></p>
-							</span>
-							<span class="content">
-								<h5>title</h5>
-								<p class="creater">name2</p>
-								<p class="note"></p>
-							</span>
+							<?php require("getHotNote.php"); ?>
 						</div>
 						<div class="buttondiv">
 							<span class="spanbutton1">
