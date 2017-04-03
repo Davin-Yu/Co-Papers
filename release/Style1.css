@@ -2,89 +2,71 @@ html{
   width:100%;
   height:100%;
   font-family: Tahoma;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 body{
   width:100%;
   height:100%;
+  text-align:center;
 }
-.main{
-  position:absolute;
-  left:50%;
-  transform:translate(-35%,0);
-}
-.part1{
-  position:relative;
-  left:-50%
-}
-h1{
-  text-shadow: 0px 0px 10px;
-  font-size:35px;
-}
-.user{
+.login{
   position:fixed;
   font-size:15px;
   right:5px;
   top:5px;
+  z-index:99999;
 }
-.div1 input{
-  width:458px;
-  margin-top:5px;
-  margin-bottom:10px;
-  padding:5px;
-  font-size:15px;
-  border-radius:10px;
+.main{
+  margin:0 auto;
 }
-.div2 select{
-  width:472px;
-  margin-top:5px;
-  margin-bottom:10px;
-  padding:5px;
-  font-size:15px;
-  border-radius:10px;
+.title{
+  margin:0 auto;
 }
-.div3 input{
-  margin-top:5px;
-  margin-bottom:10px;
-  padding:5px;
-  border-radius:10px;
-}
-.div3 #newTag{
-  width:120px;
-  margin-top:5px;
-  margin-bottom:10px;
-  padding:5px;
-  border-radius:10px;
-}
-.div3 select{
-  width:120px;
-  margin-top:5px;
-  margin-bottom:10px;
-  padding:5px;
-  border-radius:10px;
-}
-.div4 input{
-  width:458px;
-  margin-top:5px;
-  margin-bottom:10px;
-  padding:5px;
-  font-size:15px;
-  border-radius:10px;
-}
-.div5 textarea{
-  width:458px;
-  height:300px;
-  overflow:auto;
-  margin-top:5px;
-  margin-bottom:10px;
-  padding:5px;
-  font-size:15px;
-  border-radius:10px;
-}
-.div6 #button{
+.title h1{
+  text-shadow: 0px 0px 10px;
+  font-size:45px;
   position:relative;
-  left:50%;
-  width:100px;
+  left:-20%;
+}
+.part2{
+  margin:0 auto;
+  width:500px;
+  height:300px;
+  border-width:medium;
+  border-style:solid;
+  border-radius:10px;
+  font-family: Tahoma;
+  font-size:20px;
+}
+.part2 label{
+  position:relative;
+  left:-25%;
+  display:block;
+  margin-top:10px;
+}
+.part2 #search1{
+  width:300px;
+  margin-bottom:10px;
+  padding:5px;
+  font-size:15px;
+  font-weight:bolder;
+  border-radius:10px;
+  outline:none;
+  background-image:url(http://www.clker.com/cliparts/r/2/Q/h/3/L/system-search-hi.png);
+  background-repeat:no-repeat;
+  background-size: 21px 18px;
+  background-position: 95%;
+}
+.part2 select{
+  width:315px;
+  margin-bottom:10px;
+  padding:5px;
+  font-size:15px;
+  font-weight:bolder;
+  border-radius:10px;
+}
+.part2 #button{
+  width:315px;
   margin-top:20px;
   margin-bottom:20px;
   padding:5px;
@@ -93,4 +75,53 @@ h1{
   border-radius:10px;
   background-color:#4a77d4;
   color:#fff;
+}
+.part3{
+  margin:0 auto;
+  width:900px;
+  height:300px;
+  border-width:medium;
+  border-style:solid;
+  border-radius:10px;
+  font-family: Tahoma;
+  font-size:20px;
+}
+.part3 span{
+  float:left;
+  display:block;
+}
+.part3 .content{
+  font-size:15px;
+  margin-top:-30px;
+  margin-left:58px;
+  margin-right:70px;
+
+}
+.part3 .content .note{
+  width:120px;
+  height:120px;
+  word-wrap:break-word;
+  word-break:normal;
+  border-style:solid;
+  border-radius:10px;
+  overflow:auto;
+}
+.part3 .content h4{
+  font-size:19px;
+}
+.part3 .content .creater{
+  margin-top:-20px;
+}
+.part3 #button1{
+  float:left;
+  margin-top:60px;
+  margin-left:10px;
+}
+.part3 #button2{
+  float:right;
+  margin-top:60px;
+}
+.part3 .division{
+  padding:200px 6px 0px 6px;
+  border-left: 4px solid #000;
 }
