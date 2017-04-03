@@ -1,10 +1,10 @@
 ### Check List for the first Raw Version 1.0
 | Name (.html)          | Process   | Description |
 | ----------------------|:---------:|-------------|
-| MainPage              |           |             |
+| MainPage              |   *       |             |
 | UserLogin             |   *       |             |
 | UserSignUp            |   ✓       |             |
-| Login_Main            |           |             |
+| Login_Main            |   *       |             |
 | NoteCreate            |   ✓       |             |
 | MyView                |           |             |
 | OtherView             |           |             |

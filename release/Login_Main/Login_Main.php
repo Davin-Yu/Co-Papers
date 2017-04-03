@@ -40,14 +40,6 @@
 							<h4>Hottest Notes</h4>
 							<?php require("getHotNote.php"); ?>
 						</div>
-						<div class="buttondiv">
-							<span class="spanbutton1">
-								<input type="submit"  id="button1" value="Last">
-							</span>
-							<span class="spanbutton2">
-								<input type="submit"  id="button2" value="Next">
-							</span>
-						</div>
 					</span>
 				</div>
 			</form>
