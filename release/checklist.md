@@ -16,4 +16,4 @@
 
 ### Comment
 1. Need to add Verification code
-2. Need to add javascript for user sign up authentication
+2. Need to add Javascript for user sign up authentication
