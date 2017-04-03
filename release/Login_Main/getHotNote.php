@@ -1,5 +1,8 @@
 <?php
   session_start();
   require("../connectDB.php");
-  // Get the most host 5 notes and save it
+  $result = mysql_query ("SELECT * FROM
+                          Users ORDER BY
+                          hot DESC", $connection);
+  
 ?>

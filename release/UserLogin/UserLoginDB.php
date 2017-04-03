@@ -15,8 +15,7 @@
   }
   $Uname = $_GET["_username"];
   $Upass = MD5($_GET["_password"]);
-  $connection = mysql_connect("localhost","root","");
-  mysql_select_db("grouppj", $connection);
+  require("../connectDB.php");
   $result = mysql_query ("SELECT * FROM
                           Users", $connection);
   $flag = false;

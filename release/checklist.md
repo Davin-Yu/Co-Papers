@@ -2,7 +2,7 @@
 | Name (.html)          | Process   | Description |
 | ----------------------|:---------:|-------------|
 | MainPage              |           |             |
-| UserLogin             |           |             |
+| UserLogin             |   *       |             |
 | UserSignUp            |   ✓       |             |
 | Login_Main            |           |             |
 | NoteCreate            |   ✓       |             |
