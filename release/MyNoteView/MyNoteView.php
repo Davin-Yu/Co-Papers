@@ -33,11 +33,9 @@
 					 ?>
 				</div>
 				<div class="part3">
-					<input type="submit"  name="CreateANew" id="button1" value="Create a New">
-					<input type="button"  name="Edit" id="button1" value="Edit">
+					 <a href="../MyNoteEdit/MyNoteEdit.php">Edit</a>
 				</div>
 		 </form>
 		</div>
 	</body>
-
 </html>
