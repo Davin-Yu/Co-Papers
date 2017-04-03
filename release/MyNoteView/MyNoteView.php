@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -10,7 +9,7 @@
 		require('getMyNoteView.php');
 	 ?>
 		<div class="user">
-			Hello <?php echo $_SESSION["username"]?>  | Home Page | Quit
+				Hello <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?> | <a href="../NoteCreate/NoteCreate.php ">Note Create</a> | <a href="../UserLogin/EndSession.php">Log out</a>
 		</div>
 		<div class="main">
 			<div class="part1">

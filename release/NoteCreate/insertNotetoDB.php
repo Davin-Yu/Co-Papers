@@ -16,7 +16,8 @@
   $ifpublicize=$_POST['_ifpublicize'];
 
   require("../connectDB.php");
-  $sql="INSERT INTO Notes VALUES('','$user_id','$article','$article_url','$note_content','$topic','$tag','0','$ifpublicize')";
+  $sql="INSERT INTO Notes
+        VALUES('','$user_id','$article','$article_url','$note_content','$topic','$tag','0','$ifpublicize')";
   $result=mysql_query($sql);
 
   if($result===true){
