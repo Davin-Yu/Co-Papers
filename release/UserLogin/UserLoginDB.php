@@ -10,7 +10,7 @@
 */
   session_start();  //This help to keep track of user info. from page to page
   if (!empty($_SESSION['user_id'])) {
-    echo "You have alreadly login";
+    echo  "<script type='text/javascript'>alert('You have alreadly Logged in');location.href='../Login_Main/Login_Main.php'</script>";
     exit;
   }
   $Uname = $_GET["_username"];
@@ -31,7 +31,6 @@
     $_SESSION['user_id'] = $db_user_id;
     $_SESSION['username'] = $db_username;
     header("Location: ../Login_Main/Login_Main.php");
-    exit;
   }else {
     echo "Wrong!";
   }
