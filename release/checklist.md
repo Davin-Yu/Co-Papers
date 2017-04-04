@@ -10,7 +10,7 @@
 | OtherView             |           |             |
 | MyNoteView            |   *       | JS for Reply method; Comment, reply style |
 | OtherNoteView         |   *       | JS for Reply method; Comment, reply style |
-| MyNoteEdit            |           |             |
+| MyNoteEdit            |   ✓       |             |
 | SearchedResult        |           |             |
 | MyViewSearchedResult  |           |             ||
 
