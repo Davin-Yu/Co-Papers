@@ -6,7 +6,7 @@ if(!empty($_GET['_title'])){
 	$title=$_GET['_title'];
 	$topic=$_GET['_topic'];
     $sql="select * from `notes` where `article` like '%$title%' and `topic`='$topic'";
-	$query=mysql_query($sql);	
+	$query=mysql_query($sql);
 	while($rs=mysql_fetch_array($query)){
 		$id=$rs['user_id'];
 		$sql1="select * from `users` where `user_id`=$id";
@@ -23,9 +23,9 @@ if(!empty($_GET['_title'])){
 			</span>
 		</li>
 		<hr />
-						
 
-<?php	
+
+<?php
 }
 }
 
@@ -34,8 +34,8 @@ if(!empty($_GET['_title'])){
 				</div>
 			</form>
 		</div>
-		<?php 
-		if(empty($_SESSION['username'])){?>			
+		<?php
+		if(empty($_SESSION['username'])){?>
 			<div class="user">
 				<a href="UserLogin.html">Login</a>
 			</div>
