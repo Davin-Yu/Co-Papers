@@ -1,15 +1,15 @@
 ### Check List for the first Raw Version 1.0
 | Name (.html)          | Process   | Description |
 | ----------------------|:---------:|-------------|
-| MainPage              |   *       | Need Javascript for Hot notes change |
+| MainPage              |   *       | JS for Hot notes change; Hot Notes Linker |
 | UserLogin             |   *       |             |
 | UserSignUp            |   ✓       |             |
-| Login_Main            |   *       | Need Javascript for Hot notes change |
+| Login_Main            |   *       | JS for Hot notes change; Hot Notes Linker |
 | NoteCreate            |   ✓       |             |
 | MyView                |           |             |
 | OtherView             |           |             |
-| MyNoteView            |   *       | Need Javascript for Reply method |
-| OtherNoteView         |           |             |
+| MyNoteView            |   *       | JS for Reply method; Comment, reply style |
+| OtherNoteView         |   *       | JS for Reply method; Comment, reply style |
 | MyNoteEdit            |           |             |
 | SearchedResult        |           |             |
 | MyViewSearchedResult  |           |             ||

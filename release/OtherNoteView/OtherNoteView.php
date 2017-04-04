@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 	<head>
 	<meta charset="utf-8" />
@@ -7,15 +6,15 @@
 	</head>
 	<body>
 		<?php
-			require('getMyNoteView.php');
+			require('getOtherNoteView.php');
 		 ?>
 		<div class="user">
-			Hello <?php echo $_SESSION["username"]?>  | Home Page | Quit
+			Hello <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?> | <a href="followUser.php">Follow</a> | <a href="../UserLogin/EndSession.php">Log out</a>
 		</div>
 		<div class="main">
 			<div class="part1">
 				<h1>
-					<?php echo $_GET["visit_user"]?>   Notes
+					<?php if (!empty($_GET["visit_user"])) {echo $_GET["visit_user"];} else {echo "test";}?>   Notes
 				</h1>
 			</div>
 			<form>
@@ -36,8 +35,6 @@
 					</div>
 				</form>
 				<div class="part3">
-					<input type="button"  name="Follow" id="button1" value="Follow">
-					<input type="button"  name="Comment" id="button1" value="Comment">
 				</div>
 			</form>
 		</div>

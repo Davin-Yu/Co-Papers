@@ -5,10 +5,12 @@
  *  @author Davin-Yu
  */
 
- $Noteid = $_GET["_note_id"];
- //$Noteid = 1;    //For Testing
- $connection = mysql_connect("localhost","root","");
- mysql_select_db("grouppj", $connection);
+ if (!empty($_GET["_note_id"])) {
+   $Noteid = $_GET["_note_id"];
+ } else {
+   $Noteid = 1;    //For Testing
+ }
+ require("../connectDB.php");
  $result = mysql_query ("SELECT * FROM
                          Comments WHERE note_id = '$Noteid'", $connection);
  while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
