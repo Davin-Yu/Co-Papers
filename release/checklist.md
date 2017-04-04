@@ -6,7 +6,7 @@
 | UserSignUp            |   ✓       |             |
 | Login_Main            |   *       | JS for Hot notes change; Hot Notes Linker |
 | NoteCreate            |   ✓       |             |
-| MyView                |           |             |
+| MyView                |   *       |             |
 | OtherView             |           |             |
 | MyNoteView            |   *       | JS for Reply method; Comment, reply style |
 | OtherNoteView         |   *       | JS for Reply method; Comment, reply style |
