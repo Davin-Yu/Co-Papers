@@ -1,0 +1,93 @@
+body{
+    background-color: #f7f7f7;
+}    
+.navbar{
+	height: 61px;
+	border-bottom: 1px solid #c4c4c4;
+}
+.navbar-header img{
+	margin: -6px 0 0 -1px;
+}
+.collapse ul{
+	padding: 5px 0 0 20px;
+	font-family: Arial; 
+	font-size: 18px;
+}
+.collapse-button{
+    padding: 5px 0 0 0;
+}
+.center-block{
+	width: 850px;
+	margin-bottom: 80px;
+	font-size: 18px;
+	font-family: Georgia,serif;
+}
+.Page-Title{
+	width: 600px;
+	margin: 30px auto 20px;
+}
+.Page-Title p{
+	color: #96cdcd;
+	font-size: 33px;
+	text-align: center;
+	font-family: Georgia,serif;
+}
+.Note-body{
+	width: 720px; 
+	margin: 0 auto; 
+	background-color: #fff; 
+	border: 1px solid #cccccc; 
+	box-shadow:0 0 8px #e6e6e6;
+}
+.Note-content{
+	width: 660px; 
+	margin: 25px auto;
+}
+.Note-contet-acitivity-title h3{
+	text-align: center;
+}
+.url-button{
+	width: 100px; 
+	margin: 10px auto;
+}
+.Comment-Edit-box{
+	width: 718px; 
+	height: 165px; 
+	background-color: #eeeeee; 
+}
+#commentAusers{
+	padding: 10px 0 0 30px;
+}
+#comment-textarea{
+	width: 650px;
+}
+#button-comment{
+	padding-top: 10px;
+}
+.Other-comments-first{
+	margin: 20px 0 0 64px; 
+	width: 720px; 
+	overflow: hidden; 
+	border-top: 1px solid #c4c4c4; 
+}
+.Other-comments{
+	margin: 5px 0 0 64px; 
+	width: 720px;  
+	border-top: 1px solid #c4c4c4;
+}
+.created-comments-list{
+	list-style: none;
+}
+.comment{
+	list-style: none; 
+	padding-top: 10px;
+}
+.comment-content h5{
+	padding: 10px 0 0 0;
+}
+.navbar-ex1-collapse{
+	background-color: #f5f5f5;
+}
+#button-block{
+	padding-top:8px;
+}
