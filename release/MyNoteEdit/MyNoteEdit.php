@@ -49,7 +49,7 @@
                 <h4>Add note of your current literature and we will find the right auidence to follow your note.</h4>
             </div>
             <div class="Note-Logo">
-                <img src="note-logo.png" alt="note-logo">
+                <img src="edit-logo.png" alt="note-logo">
             </div>
             <!--Form-->
             <div class="Create-Form">
