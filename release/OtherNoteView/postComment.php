@@ -18,7 +18,7 @@
   $result=mysql_query($sql);
 
   if($result===true){
-    echo  "<script type='text/javascript'>alert('Comment Successfully');location.href='../OtherNoteView/OtherNoteView.php'</script>";
+    echo  "<script type='text/javascript'>alert('Comment Successfully');location.href='../OtherNoteView/OtherNoteView.php?_note_id=$Noteid'</script>";
   }else{
     echo "<script type='text/javascript'>alert('Failed');</script>".$sql;
   }

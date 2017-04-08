@@ -46,7 +46,7 @@
         <div class="center-block">
         	<div class="Page-Title">
         		<p>Search</p>
-        		<form action="##" class="form-inline navbar-form" id="search-form" rol="search">
+        		<form action="SearchedResult.php" class="form-inline navbar-form" id="search-form" rol="search" method="POST">
         			<div class="form-group">
         				<select class="form-control col-lg-5" name="_topic">
 									<option select="selected" value = "Others">Others</option>
@@ -71,95 +71,9 @@
                 <img src="search-logo.png" alt="search-logo">
           </div>
             <!--Results Box-->
-            <div class="Search-Results">
-            	<ul class="searched-notes-list">
-            		<li class="result">
-            			<h3><a href="">Software</a>
-            			</h3>
-            			<h4><a href="">user name</a></h4>
-            			<h5>
-            				<span class="glyphicon glyphicon-tags"></span> 
-            				<span>computer;</span>
-            				<span>software;</span>
-            			</h5>
-            			<div class="detailed-info">
-        					<h5>
-        						<a href="">View note</a>
-        					</h5>
-            				<div>
-            					<p>1 follower</p>
-            				</div>
-            			</div>
-            		</li>
-            	</ul>
-            	<div class="Cut-off-line"></div>
-
-            	<ul class="searched-notes-list">
-            		<li class="result">
-            			<h3><a href="">Software Engineering</a>
-            			</h3>
-            			<h4><a href="">user name</a></h4>
-            			<h5>
-            				<span class="glyphicon glyphicon-tags"></span>&nbsp
-            				<span>computer;</span>
-            				<span>software;</span>
-            			</h5>
-            			<div class="detailed-info">
-        					<h5>
-        						<a href="">View note</a>
-        					</h5>
-            				<div>
-            					<p>1 follower</p>
-            				</div>
-            			</div>
-            		</li>
-            	</ul>
-            	<div class="Cut-off-line"></div>
-
-            	<ul class="searched-notes-list">
-            		<li class="result">
-            			<h3><a href="">Software Engineering group</a>
-            			</h3>
-            			<h4><a href="">user name</a></h4>
-            			<h5>
-            				<span class="glyphicon glyphicon-tags"></span>&nbsp
-            				<span>computer;</span>
-            				<span>software;</span>
-            			</h5>
-            			<div class="detailed-info">
-        					<h5>
-        						<a href="">View note</a>
-        					</h5>
-            				<div>
-            					<p>1 follower</p>
-            				</div>
-            			</div>
-            		</li>
-            	</ul>
-            	<div class="Cut-off-line"></div>
-
-            	<ul class="searched-notes-list">
-            		<li class="result">
-            			<h3><a href="">Software Engineering group project</a>
-            			</h3>
-            			<h4><a href="">user name</a></h4>
-            			<h5>
-            				<span class="glyphicon glyphicon-tags"></span>&nbsp
-            				<span>computer;</span>
-            				<span>software;</span>
-            			</h5>
-            			<div class="detailed-info">
-        					<h5>
-        						<a href="">View note</a>
-        					</h5>
-            				<div>
-            					<p>1 follower</p>
-            				</div>
-            			</div>
-            		</li>
-            	</ul>
-            	<div class="Cut-off-line"></div>
-            </div>
+						<div class="Search-Results">
+						<?php require("getResult.php"); ?>
+					</div>
         </div>
 	</div>
 </body>
