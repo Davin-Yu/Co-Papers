@@ -1,6 +1,6 @@
 <?php
 /**
- *  This returns the myNote information from database.
+ *  This returns the otherNote information from database.
  *  @author Davin-Yu
  *  @param  _note_id
  *  @return _article, _article_url, _note_content, _topic, _tag, _hot, _ifpublicize
@@ -16,11 +16,14 @@
     $Noteid = 1;    //For Testing
   }
 
-  $connection = mysql_connect("localhost","root","");
-  mysql_select_db("grouppj", $connection);
+  require('../connectDB.php');
   $result = mysql_query ("SELECT * FROM
                           Notes WHERE note_id = '$Noteid'", $connection);
   $row = mysql_fetch_array($result, MYSQL_NUM);
+  $result2 = mysql_query ("SELECT username FROM
+                           Users WHERE user_id=$row[1]");
+  $row2=mysql_fetch_assoc($result2);
+  $_username = $row2['username'];
   $_article = $row[2];
   $_article_url = $row[3];
   $_note_content = $row[4];
