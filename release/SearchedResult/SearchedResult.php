@@ -46,7 +46,7 @@
         <div class="center-block">
         	<div class="Page-Title">
         		<p>Search</p>
-        		<form action="SearchedResult.php" class="form-inline navbar-form" id="search-form" rol="search" method="POST">
+        		<form action="linker.php" class="form-inline navbar-form" id="search-form" rol="search" method="POST">
         			<div class="form-group">
         				<select class="form-control col-lg-5" name="_topic">
 									<option select="selected" value = "Others">Others</option>

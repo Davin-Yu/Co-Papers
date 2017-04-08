@@ -11,7 +11,7 @@
 | MyNoteView            |   ✓       | JS for Reply method; |
 | OtherNoteView         |   ✓       | JS for Reply method; |
 | MyNoteEdit            |   ✓       |             |
-| SearchedResult        |           |             |
+| SearchedResult        |   ✓       |             |
 | MyViewSearchedResult  |           |             ||
 
 ### Comment

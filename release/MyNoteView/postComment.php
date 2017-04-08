@@ -11,10 +11,11 @@
   } else {
     $content = $_GET["_comment_content"];
   }
+  $content = htmlspecialchars($content, ENT_QUOTES);
 
   require("../connectDB.php");
   $sql="INSERT INTO Comments
-        VALUES('','$user_id','$Noteid','$content')";
+        VALUES('','{$user_id}','{$Noteid}','{$content}')";
   $result=mysql_query($sql);
 
   if($result===true){

@@ -59,6 +59,7 @@
             </div>
 
             <?php require("getComment.php"); ?>
+						 <ul class="created-comments-list"> </ul>
             <!--Bottom button-->
             <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
                 <div class="container-fluid">

@@ -1,13 +1,13 @@
 <?php
-  if (empty($_POST["_topic"])) {
+  if (empty($_GET["_topic"])) {
     $topic = "Computer Science";  //test
   } else {
-    $topic = $_POST["_topic"];
+    $topic = $_GET["_topic"];
   }
-  if (empty($_POST["_keyword"])) {
+  if (empty($_GET["_keyword"])) {
     $keywords = "yingle";         //test
   } else {
-    $keywords = $_POST["_keyword"];
+    $keywords = $_GET["_keyword"];
   }
 
   $keywordarr = split(" ", $keywords);
@@ -28,7 +28,7 @@
     $flag = 0;
     for ($i=0; $i<$keywordlen; $i++) {
       for ($j=0; $j<$articlelen; $j++) {
-        if (strncasecmp($keywordarr[$i],$articlearr[$j],strlen($keywordarr[$i])) == 0) {  /* Note case sensitive */ 
+        if (strncasecmp($keywordarr[$i],$articlearr[$j],strlen($keywordarr[$i])) == 0) {  /* Note case sensitive */
           $flag = 1;
         }
       }
@@ -47,16 +47,16 @@
             </h3>
             <h4><a href="../OtherView/OtherView.php?_user_id=$row[1]">$author</a></h4>
             <h5>
-              <span class="glyphicon glyphicon-tags"></span>
+              <span class="glyphicon glyphicon-tags"></span>&nbsp
               <span>$row[5];</span>
               <span>$row[6];</span>
             </h5>
             <div class="detailed-info">
             <h5>
-              <a href="//$row[3]">View Source</a>
+              <a href="//$row[3]" target="_blank">View Source</a>
             </h5>
               <div>
-                <p>1 follower</p>
+                <p>Hot: $row[7]</p>
               </div>
             </div>
           </li>
