@@ -1,0 +1,86 @@
+body{
+	background-color: #fcfcfc;
+}    
+.navbar{
+	height: 61px;
+	border-bottom: 1px solid #c4c4c4;
+}
+.navbar-header img{
+	margin: -6px 0 0 -1px;
+}
+.collapse ul{
+	padding: 5px 0 0 20px;
+	font-family: Arial; 
+	font-size: 18px;
+}
+.collapse-button{
+	padding: 5px 0 0 0;
+}
+.center-block{
+	width: 850px;
+	margin-bottom: 80px;
+	font-size: 18px;
+	font-family: Georgia,serif;
+}
+.Page-Title{
+	width: 600px;
+	margin-top: 60px;
+}
+.Page-Title p{
+	color: #96cdcd;
+	font-size: 33px;
+	font-family: Georgia,serif;
+}
+#new-note-button{
+	height: 40px; 
+	background-color: #96cdcd; 
+	font-size: 19px; 
+	color: #ffffff;
+	margin: 8px 0 0 200px;
+}
+.center-block{
+	width: 800px;
+}
+.search-Logo{
+	float: right;
+	margin-top: -80px;
+}
+#search-form{
+	float: left;
+	margin-left: -15px;
+}
+.Search-Results{
+	overflow: hidden;
+	width: 800px;
+	margin-top: 90px;
+	border: 1px solid #c4c4c4;
+}
+.searched-notes-list{
+	list-style: none;
+}
+.result{
+	list-style: none; 
+	padding-top: 10px;
+}
+.detailed-info{
+	padding-bottom: 10px;
+}
+.detailed-info h5{
+	padding: 10px 0 0 0;
+}
+.detailed-info div{
+	margin: -35px 0 0 650px;
+}
+.detailed-info p{
+	color: #696969;
+}
+.Cut-off-line{
+	border-top: 1px solid #dddddd; 
+	margin-top: -10px;
+}
+.navbar-ex1-collapse{
+	background-color: #f5f5f5;
+}
+#button-block{
+	padding-top: 8px;
+}
