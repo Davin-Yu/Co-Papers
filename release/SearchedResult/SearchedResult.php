@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<?php session_start(); ?>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SearchedResult</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1" />
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="SearchedResults.css">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<!--Top Navgiation-->
+		<nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!--Logo & Button section -->
+                <div class="navbar-header">
+                    <div class="collapse-button">
+                        <button type="button" class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <img src="LOGO.png" alt="logo">
+                </div>
+                <!-- Menu section -->
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+											<li><a href="../MyView/MyView.php"> Hello <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?></a></li>
+											<li><a href="../MainPage/MainPage.php ">Home</a></li>
+											<li><a href="../UserLogin/EndSession.php">Log out</a></li>
+                    </ul>
+                	<button type="button" class="btn btn-default btn-sm avtive" id="new-note-button" onclick="location.href='../NoteCreate/NoteCreate.php'">
+                    	<span class="glyphicon glyphicon-plus"></span> Create New Note
+                  </button>
+                </div>
+            </div>
+        </nav>
+        <!--Main Content-->
+        <div class="center-block">
+        	<div class="Page-Title">
+        		<p>Search</p>
+        		<form action="##" class="form-inline navbar-form" id="search-form" rol="search">
+        			<div class="form-group">
+        				<select class="form-control col-lg-5" name="_topic">
+									<option select="selected" value = "Others">Others</option>
+									<option value = "Biochemisry">Biochemisry</option>
+									<option value = "Computer Science">Computer Science</option>
+									<option value = "Chemical">Chemical</option>
+									<option value = "Literature">Literature</option>
+									<option value = "Math">Math</option>
+									<option value = "Medical">Medicine</option>
+									<option value = "Physics">Physics</option>
+						</select>
+        			</div>
+        			<div class="form-group">
+        				<input type="text" class="form-control" name="_keyword" placeholder="Keywords" required="required" style="width: 300px;" />
+        			</div>
+        			<div class="form-group">
+        				<button type="submit" class="btn btn-default">Search</button>
+        			</div>
+        		</form>
+        	</div>
+        	<div class="search-Logo">
+                <img src="search-logo.png" alt="search-logo">
+          </div>
+            <!--Results Box-->
+            <div class="Search-Results">
+            	<ul class="searched-notes-list">
+            		<li class="result">
+            			<h3><a href="">Software</a>
+            			</h3>
+            			<h4><a href="">user name</a></h4>
+            			<h5>
+            				<span class="glyphicon glyphicon-tags"></span> 
+            				<span>computer;</span>
+            				<span>software;</span>
+            			</h5>
+            			<div class="detailed-info">
+        					<h5>
+        						<a href="">View note</a>
+        					</h5>
+            				<div>
+            					<p>1 follower</p>
+            				</div>
+            			</div>
+            		</li>
+            	</ul>
+            	<div class="Cut-off-line"></div>
+
+            	<ul class="searched-notes-list">
+            		<li class="result">
+            			<h3><a href="">Software Engineering</a>
+            			</h3>
+            			<h4><a href="">user name</a></h4>
+            			<h5>
+            				<span class="glyphicon glyphicon-tags"></span>&nbsp
+            				<span>computer;</span>
+            				<span>software;</span>
+            			</h5>
+            			<div class="detailed-info">
+        					<h5>
+        						<a href="">View note</a>
+        					</h5>
+            				<div>
+            					<p>1 follower</p>
+            				</div>
+            			</div>
+            		</li>
+            	</ul>
+            	<div class="Cut-off-line"></div>
+
+            	<ul class="searched-notes-list">
+            		<li class="result">
+            			<h3><a href="">Software Engineering group</a>
+            			</h3>
+            			<h4><a href="">user name</a></h4>
+            			<h5>
+            				<span class="glyphicon glyphicon-tags"></span>&nbsp
+            				<span>computer;</span>
+            				<span>software;</span>
+            			</h5>
+            			<div class="detailed-info">
+        					<h5>
+        						<a href="">View note</a>
+        					</h5>
+            				<div>
+            					<p>1 follower</p>
+            				</div>
+            			</div>
+            		</li>
+            	</ul>
+            	<div class="Cut-off-line"></div>
+
+            	<ul class="searched-notes-list">
+            		<li class="result">
+            			<h3><a href="">Software Engineering group project</a>
+            			</h3>
+            			<h4><a href="">user name</a></h4>
+            			<h5>
+            				<span class="glyphicon glyphicon-tags"></span>&nbsp
+            				<span>computer;</span>
+            				<span>software;</span>
+            			</h5>
+            			<div class="detailed-info">
+        					<h5>
+        						<a href="">View note</a>
+        					</h5>
+            				<div>
+            					<p>1 follower</p>
+            				</div>
+            			</div>
+            		</li>
+            	</ul>
+            	<div class="Cut-off-line"></div>
+            </div>
+        </div>
+	</div>
+</body>
+</html>
