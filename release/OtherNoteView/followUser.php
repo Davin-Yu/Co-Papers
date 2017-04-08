@@ -6,13 +6,14 @@
   } else {
     $followid = $_GET["_follow_user_id"];
   }
+  $Noteid = $_GET["_note_id"];
 
   require("../connectDB.php");
   $result0 = mysql_query ("SELECT * FROM Followers
                            WHERE user_id = '$user_id' AND follwer_name = '$followid'", $connection);
   $row = mysql_fetch_array($result0, MYSQL_NUM);
   if ($row) {
-    echo "<script type='text/javascript'>alert('Already Followed');location.href='../OtherNoteView/OtherNoteView.php'</script>";
+    echo "<script type='text/javascript'>alert('Already Followed');location.href='../OtherNoteView/OtherNoteView.php?_note_id=$Noteid'</script>";
     exit;
   }
 
@@ -21,8 +22,8 @@
   $result=mysql_query($sql);
 
   if($result===true){
-    echo  "<script type='text/javascript'>alert('Follow Successfully!');location.href='../OtherNoteView/OtherNoteView.php'</script>";
+    echo  "<script type='text/javascript'>alert('Follow Successfully!');location.href='../OtherNoteView/OtherNoteView.php?_note_id=$Noteid'</script>";
   }else{
-    echo "<script type='text/javascript'>alert('Failed');location.href='../OtherNoteView/OtherNoteView.php'</script>";
+    echo "<script type='text/javascript'>alert('Failed');location.href='../OtherNoteView/OtherNoteView.php?_note_id=$Noteid'</script>";
   }
  ?>

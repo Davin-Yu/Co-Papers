@@ -74,7 +74,7 @@
 						<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
                 <div class="container-fluid">
                     <div class="center-block" id="button-block">
-                        <button type="button" class="btn btn-primary btn-lg" onclick="location.href='<?php echo 'followUser.php?_follow_user_id='.$_otherID; ?>'">Follow</button>
+                        <button type="button" class="btn btn-primary btn-lg" onclick="location.href='<?php echo 'followUser.php?_follow_user_id='.$_otherID."&_note_id=".$Noteid; ?>'">Follow</button>
                     </div>
                 </div>
             </nav>

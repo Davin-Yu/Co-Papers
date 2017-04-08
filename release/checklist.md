@@ -18,3 +18,4 @@
 1. Need to add Verification code
 2. Need to add Javascript for user sign up authentication
 3. add 'all category' search for notes
+4. follow duplicate
