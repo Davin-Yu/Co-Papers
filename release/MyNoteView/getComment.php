@@ -20,21 +20,18 @@
    $com_name = $com_name_row[1];
    /* Output */
    echo <<< eod
-   <div class="comt">
-     <div class="comment">
-       <div>
-       <span class="username">
-       $com_name
-       </span>
-       <span class="usercomments">
-         <p>$row[3]<p>
-       </span>
-       </div>
-       <br><br><br>
-       <div class="reply">
-       <input type="button"  name="Reply" id="button" value="Reply">
-       </div>
-     </div>
+   <div class="Other-comments">
+       <ul class="created-comments-list">
+           <li class="comment" >
+               <h4><a href="">$com_name</a></h4>
+               <div class="comment-content">
+                   <p>$row[3]</p>
+               </div>
+               <h5 >
+                   <a href="">Reply</a>
+               </h5>
+           </li>
+       </ul>
    </div>
 eod;
  }
