@@ -8,8 +8,8 @@
 | NoteCreate            |   ✓       |             |
 | MyView                |   *       |             |
 | OtherView             |           |             |
-| MyNoteView            |   *       | JS for Reply method; Comment, reply style |
-| OtherNoteView         |   *       | JS for Reply method; Comment, reply style |
+| MyNoteView            |   ✓       | JS for Reply method; |
+| OtherNoteView         |   *       | JS for Reply method; |
 | MyNoteEdit            |   ✓       |             |
 | SearchedResult        |           |             |
 | MyViewSearchedResult  |           |             ||
