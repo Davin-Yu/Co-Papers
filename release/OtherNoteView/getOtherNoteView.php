@@ -23,6 +23,7 @@
   $result2 = mysql_query ("SELECT username FROM
                            Users WHERE user_id=$row[1]");
   $row2=mysql_fetch_assoc($result2);
+  $_otherID = $row[1];
   $_username = $row2['username'];
   $_article = $row[2];
   $_article_url = $row[3];
