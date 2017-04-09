@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="url-button">
-                     <button type="button" class="btn btn-primary btn-sm" onclick="javascript:window.open('//<?php echo $_article_url; ?>')">View Source</button>
+                     <button type="button" class="btn btn-primary btn-sm" onclick="javascript:window.open('<?php echo $_article_url; ?>')">View Source</button>
                 </div>
             </div>
 

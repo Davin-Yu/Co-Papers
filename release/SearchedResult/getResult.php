@@ -53,7 +53,7 @@
             </h5>
             <div class="detailed-info">
             <h5>
-              <a href="//$row[3]" target="_blank">View Source</a>
+              <a href=$row[3] target="_blank">View Source</a>
             </h5>
               <div>
                 <p>Hot: $row[7]</p>

@@ -15,6 +15,8 @@
   $note_content=$_POST['_note_content'];
   $ifpublicize=$_POST['_ifpublicize'];
 
+  $note_content = htmlspecialchars($note_content, ENT_QUOTES);
+
   require("../connectDB.php");
   $sql="INSERT INTO Notes
         VALUES('','$user_id','$article','$article_url','$note_content','$topic','$tag','0','$ifpublicize')";

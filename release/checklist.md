@@ -18,7 +18,7 @@
 1. Need to add Verification code
 2. Need to add Javascript for user sign up authentication
 3. add 'all category' search for notes
-4. follow duplicate
+4. Create Note '  problem
 
 ### Issues to mention
 1. Follow the Software Engineer Design Process (release...), plan the next step
