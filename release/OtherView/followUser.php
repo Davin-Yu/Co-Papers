@@ -9,7 +9,7 @@
 
   require("../connectDB.php");
   $result0 = mysql_query ("SELECT * FROM Followers
-                           WHERE user_id = $user_id AND follwer_name = $followid", $connection);
+                           WHERE user_id = $followid AND follwer_name = $user_id", $connection);
   $row = mysql_fetch_array($result0, MYSQL_NUM);
   if ($row) {
     echo "<script type='text/javascript'>alert('Already Followed');location.href='../OtherView/OtherView.php?_user_id=$followid'</script>";
