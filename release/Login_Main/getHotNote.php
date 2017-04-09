@@ -4,7 +4,7 @@
   require("../connectDB.php");
   $result = mysql_query ("SELECT *
                           FROM Notes
-                          ORDER BY hot DESC", $connection);
+                          ORDER BY hot", $connection);
   $now = 0;
   while (($row = mysql_fetch_array($result, MYSQL_NUM)) && ($now<$num)) {
     $_article = $row[2];

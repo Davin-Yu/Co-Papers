@@ -7,7 +7,7 @@
 | Login_Main            |   *       | JS for Hot notes change; Hot Notes Linker |
 | NoteCreate            |   ✓       |             |
 | MyView                |   *       |             |
-| OtherView             |           |             |
+| OtherView             |   ✓       |             |
 | MyNoteView            |   ✓       | JS for Reply method; |
 | OtherNoteView         |   ✓       | JS for Reply method; |
 | MyNoteEdit            |   ✓       |             |
@@ -19,3 +19,8 @@
 2. Need to add Javascript for user sign up authentication
 3. add 'all category' search for notes
 4. follow duplicate
+
+### Issues to mention
+1. Follow the Software Engineer Design Process (release...), plan the next step
+2. Test for the page (build database, issue on GitHub)
+3. Enter the private GitHub develop Team
