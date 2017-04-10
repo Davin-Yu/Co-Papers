@@ -2,7 +2,7 @@
   if (!empty($_GET["_edit_note"])) {
     $note_id = $_GET["_edit_note"];
   } else {
-    $note_id = 2; //test
+    $note_id = 11; //test
   }
 
   require("../connectDB.php");

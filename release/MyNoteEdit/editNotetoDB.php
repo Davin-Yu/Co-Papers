@@ -3,8 +3,8 @@
  *	@author Davin Yu, Yao Bei
  */
   session_start();
-  require("getNoteInfo.php");
   $user_id = $_SESSION['user_id'];
+  $_note_id = $_GET["_note_id"];
   $article = $_POST['_article'];
   $topic = $_POST['_topic'];
   if ($_POST['optionsRadiosinline'] == "option1") {

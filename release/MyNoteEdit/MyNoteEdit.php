@@ -53,7 +53,7 @@
             </div>
             <!--Form-->
             <div class="Create-Form">
-                <form role="form" action="editNotetoDB.php" method="POST">
+                <form role="form" action="editNotetoDB.php?_note_id=<?php echo $_note_id; ?>" method="POST">
                     <div class="form-group">
                         <!--Paper Title-->
                         <label for="name">Paper Title</label>
