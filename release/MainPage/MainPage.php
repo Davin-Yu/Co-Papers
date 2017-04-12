@@ -27,7 +27,7 @@
         <div class="center-block">
             <div class="Mainsearch">
                 <div class="center-block" id="abstract">
-                    <p>Discover scientific literature, and <br>
+                    <p>Discover scientific literature, <br>
 											 Publicize your own notes.</p>
                 </div>
                 <div class="center-block" id="Search-form">
@@ -76,17 +76,8 @@
                         </ol>
                     </div>
                     <!-- Carousel Projects -->
-                    <div class="carousel-inner" id="content">
-                        <div class="item active">
-                            <div class="center-block" id="item0">
-																<div class="hottest-note">
-                                    <h3>title 5</h3>
-                                    <p class="creater">name 5</p>
-                                    <p class="note"><p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+									<div class="carousel-inner" id="content">
+										<?php require("getHotNote.php"); ?>
                     <div class="button">
                         <!-- Carousel Navigation -->
                         <a class="carousel-control left" href="#myCarousel"

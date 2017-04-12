@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -13,30 +14,30 @@
 	<div class="container-fluid">
         <!--Top Header-->
 		<div class="Header">
-            <div class="container-fluid">  
+            <div class="container-fluid">
                <div class="center-block" id="Logo">
                    <p>Co-Papers</p>
-               </div>   
+               </div>
                <div class="nav-list">
-                   <ul class="right-spans">  
-                        <li><a href="# ">Hello User |</a></li>  
-                        <li><a href="# ">Create new note |</a></li>
-                        <li><a href="#">Log out</a></li>    
-                    </ul>  
-               </div>             
-            </div>  
+                   <ul class="right-spans">
+										 <li><a href="../MyView/MyView.php"> Hello <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?></a></li>
+										 <li><a href="../NoteCreate/NoteCreate.php ">Create New Note</a></li>
+										 <li><a href="../UserLogin/EndSession.php">Log out</a></li>
+                    </ul>
+               </div>
+            </div>
         </div>
         <!--Main Content-->
         <div class="center-block">
-            <div class="Mainsearch">                
+            <div class="Mainsearch">
                 <div class="center-block" id="abstract">
                     <p>Discover scientific literature, and make your notes visible.</p>
-                </div>               
-                <div class="center-block" id="Search-form">         
-                    <div class="form-group" id="searchKey">     
+                </div>
+                <div class="center-block" id="Search-form">
+                    <div class="form-group" id="searchKey">
                         <input type="text" class="form-control" id="firstname" placeholder="Search Keywords">
                     </div>
-                    <div class="form-group" id="topicsChoice"> 
+                    <div class="form-group" id="topicsChoice">
                         <select class="form-control">
                             <option>Choose Topics</option>
                             <option value = "Biochamisry">Biochamisry</option>
@@ -46,7 +47,7 @@
                             <option value = "Math">Math</option>
                             <option value = "Medichine">Medicine</option>
                             <option value = "Physics">Physics</option>
-                        </select> 
+                        </select>
                     </div>
                     <div class="form-group" id="button">
                         <div class="center-block" id="search-button">
@@ -110,7 +111,7 @@
                             <li data-target="#myCarousel" data-slide-to="6"></li>
 							<li data-target="#myCarousel" data-slide-to="7"></li>
                             <li data-target="#myCarousel" data-slide-to="8"></li>
-                        </ol> 
+                        </ol>
                     </div>
                     <!-- Carousel Projects -->
                     <div class="carousel-inner" id="content">
@@ -124,7 +125,7 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="item">
                             <div class="center-block" id="item0">
@@ -136,7 +137,7 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                         <div class="item">
                             <div class="center-block" id="item0">
@@ -148,7 +149,7 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
 						<div class="item">
                             <div class="center-block" id="item0">
@@ -160,7 +161,7 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
 						<div class="item">
                             <div class="center-block" id="item0">
@@ -172,7 +173,7 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
 						<div class="item">
                             <div class="center-block" id="item0">
@@ -184,7 +185,7 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
 						<div class="item">
                             <div class="center-block" id="item0">
@@ -196,7 +197,7 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
 						<div class="item">
                             <div class="center-block" id="item0">
@@ -208,7 +209,7 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
 						<div class="item">
                             <div class="center-block" id="item0">
@@ -220,14 +221,14 @@
 									dddddddddddddddddddddddddddddddddddddddddddddddddd
 									dddddddddddddddddddddddddddsdasd</p>
                                 </div>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <div class="button">
                         <!-- Carousel Navigation -->
-                        <a class="carousel-control left" href="#myCarousel" 
+                        <a class="carousel-control left" href="#myCarousel"
                         data-slide="prev">&lsaquo;</a>
-                        <a class="carousel-control right" href="#myCarousel" 
+                        <a class="carousel-control right" href="#myCarousel"
                         data-slide="next">&rsaquo;</a>
                     </div>
                 </div>

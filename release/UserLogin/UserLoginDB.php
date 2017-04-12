@@ -29,8 +29,8 @@
   if ($flag == true) {
     $_SESSION['user_id'] = $db_user_id;
     $_SESSION['username'] = $db_username;
-    header("Location: ../Login_Main/Login_Main.php");
+    echo  "<script type='text/javascript'>alert('Log In Successfully');location.href='../Login_Main/Login_Main.php'</script>";
   }else {
-    echo "Wrong!";
+    echo  "<script type='text/javascript'>alert('Invalide Username or Password');location.href='../Login_Main/Login_Main.php'</script>";
   }
 ?>
