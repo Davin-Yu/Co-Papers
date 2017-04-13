@@ -31,12 +31,12 @@
                     <p>Discover scientific literature, <br>
 											 Publicize your own notes.</p>
                 </div>
-                <div class="center-block" id="Search-form">
+								<form action="linker.php" class="center-block" id="Search-form" rol="search" method="POST">
                     <div class="form-group" id="searchKey">
-                        <input type="text" class="form-control" id="firstname" placeholder="Search Keywords">
+											<input type="text" class="form-control" name="_keyword" placeholder="Keywords" required="required"/>
                     </div>
                     <div class="form-group" id="topicsChoice">
-                        <select class="form-control">
+                        <select class="form-control" name="_topic">
                             <option>Choose Topics</option>
                             <option value = "Biochamisry">Biochamisry</option>
                             <option value = "Computer Science">Computer Science</option>
@@ -50,10 +50,10 @@
                     </div>
                     <div class="form-group" id="button">
                         <div class="center-block" id="search-button">
-                            <button type="button" class="btn btn-primary btn-lg">Search Now</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Search Now</button>
                         </div>
                     </div>
-                </div>
+	                </form>
             </div>
             <div class="Hottest">
                 <div class="center-block">

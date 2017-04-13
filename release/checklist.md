@@ -21,5 +21,4 @@
 
 ### Issues to mention
 1. Follow the Software Engineer Design Process (release...), plan the next step
-2. Test for the page (build database, issue on GitHub)
-3. Enter the private GitHub develop Team
+2. Enter pages login/not login

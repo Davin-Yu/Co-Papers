@@ -12,7 +12,11 @@
 
   $keywordarr = split(" ", $keywords);
   $keywordlen = count($keywordarr);
-  $notme = $_SESSION["user_id"];
+  if (empty($_SESSION["user_id"])) {
+    $noteme=0;
+  } else {
+    $notme = $_SESSION["user_id"];
+  }
 
   require("../connectDB.php");
   $result=mysql_query("SELECT * FROM Notes
