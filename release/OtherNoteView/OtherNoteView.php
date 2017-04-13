@@ -1,4 +1,5 @@
 <?php session_start();
+require("../testLogin.php");
 require("inchot.php"); ?>
 <!DOCTYPE html>
 <html lang="en">

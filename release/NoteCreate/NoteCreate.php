@@ -1,4 +1,5 @@
-<? session_start(); ?>
+<? session_start();
+require("../testLogin.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

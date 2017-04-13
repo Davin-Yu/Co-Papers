@@ -1,5 +1,6 @@
 <?php
  	session_start();
+  require("../testLogin.php");
 	require("getNoteInfo.php");
  ?>
 <!DOCTYPE html>
