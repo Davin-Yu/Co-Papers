@@ -15,7 +15,7 @@
   if (empty($_SESSION["user_id"])) {
     $noteme=0;
   } else {
-    $notme = $_SESSION["user_id"];
+    $noteme = $_SESSION["user_id"];
   }
 
   require("../connectDB.php");

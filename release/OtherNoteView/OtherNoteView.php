@@ -1,4 +1,5 @@
-<?php require("inchot.php"); ?>
+<?php session_start();
+require("inchot.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

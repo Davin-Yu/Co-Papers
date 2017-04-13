@@ -13,32 +13,33 @@
 <body>
 	<div class="container-fluid">
         <!--Top Header-->
-		<div class="Header">
+				<div class="Header">
             <div class="container-fluid">
                <div class="center-block" id="Logo">
                    <p>Co-Papers</p>
                </div>
                <div class="nav-list">
-                   <ul class="right-spans">
-										 <li><a href="../MyView/MyView.php"> Hello <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?></a></li>
-										 <li><a href="../NoteCreate/NoteCreate.php ">Create New Note</a></li>
-										 <li><a href="../UserLogin/EndSession.php">Log out</a></li>
+                   	<ul class="right-spans">
+										 <li><a href="../MyView/MyView.php"style="color:rgb(255,255,255)"> <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?>'s NoteBook |</a></li>
+										 <li><a href="../NoteCreate/NoteCreate.php"style="color:rgb(255,255,255)">Create Note |</a></li>
+										 <li><a href="../UserLogin/EndSession.php"style="color:rgb(255,255,255)">Log out</a></li>
                     </ul>
                </div>
             </div>
         </div>
         <!--Main Content-->
-        <div class="center-block">
+				<div class="center-block">
             <div class="Mainsearch">
                 <div class="center-block" id="abstract">
-                    <p>Discover scientific literature, and make your notes visible.</p>
+                    <p>Discover scientific literature, <br>
+											 Publicize your own notes.</p>
                 </div>
-                <div class="center-block" id="Search-form">
+								<form action="linker.php" class="center-block" id="Search-form" rol="search" method="POST">
                     <div class="form-group" id="searchKey">
-                        <input type="text" class="form-control" id="firstname" placeholder="Search Keywords">
+											<input type="text" class="form-control" name="_keyword" placeholder="Keywords" required="required"/>
                     </div>
                     <div class="form-group" id="topicsChoice">
-                        <select class="form-control">
+                        <select class="form-control" name="_topic">
                             <option>Choose Topics</option>
                             <option value = "Biochamisry">Biochamisry</option>
                             <option value = "Computer Science">Computer Science</option>
@@ -47,52 +48,17 @@
                             <option value = "Math">Math</option>
                             <option value = "Medichine">Medicine</option>
                             <option value = "Physics">Physics</option>
+														<option value = "Others">Others</option>
                         </select>
                     </div>
                     <div class="form-group" id="button">
                         <div class="center-block" id="search-button">
-                            <button type="button" class="btn btn-primary btn-lg">Search Now</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Search Now</button>
                         </div>
                     </div>
-                </div>
+	                </form>
             </div>
-			<div class="center-block">
-			<button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#demo" id = "followPeople">
-				Followed Users
-			</button>
-				<div id="demo" class="collapse">
-					<div class="followed">
-						<h3>Followed Users</h3>
-						<table class="table" border="1px">
-							<tr>
-								<td>Bale</td>
-							</tr>
-							<tr>
-								<td>Tom</td>
-							</tr>
-							<tr>
-								<td>Tom</td>
-							</tr>
-							<tr>
-								<td>Tom</td>
-							</tr>
-							<tr>
-								<td>Tom</td>
-							</tr>
-							<tr>
-								<td>Tom</td>
-							</tr>
-							<tr>
-								<td>Tom</td>
-							</tr>
-							<tr>
-								<td>Tom</td>
-							</tr>
-					</table>
-					</div>
-				</div>
-			</div>
-            <div class="Hottest">
+						<div class="Hottest">
                 <div class="center-block">
                      <p>Hottest Notes</p>
                 </div>
@@ -105,125 +71,17 @@
                             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                             <li data-target="#myCarousel" data-slide-to="1"></li>
                             <li data-target="#myCarousel" data-slide-to="2"></li>
-							<li data-target="#myCarousel" data-slide-to="3"></li>
+														<li data-target="#myCarousel" data-slide-to="3"></li>
                             <li data-target="#myCarousel" data-slide-to="4"></li>
-							<li data-target="#myCarousel" data-slide-to="5"></li>
+														<li data-target="#myCarousel" data-slide-to="5"></li>
                             <li data-target="#myCarousel" data-slide-to="6"></li>
-							<li data-target="#myCarousel" data-slide-to="7"></li>
+														<li data-target="#myCarousel" data-slide-to="7"></li>
                             <li data-target="#myCarousel" data-slide-to="8"></li>
                         </ol>
                     </div>
                     <!-- Carousel Projects -->
-                    <div class="carousel-inner" id="content">
-                        <div class="item active">
-                            <div class="center-block" id="item0">
-                                <div class="hottest-note">
-                                    <h3>title 1</h3>
-                                    <p class="creater">name 1</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="center-block" id="item0">
-								<div class="hottest-note">
-                                    <h3>title 2</h3>
-                                    <p class="creater">name 2</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="center-block" id="item0">
-								<div class="hottest-note">
-                                    <h3>title 3</h3>
-                                    <p class="creater">name 3</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-						<div class="item">
-                            <div class="center-block" id="item0">
-								<div class="hottest-note">
-                                    <h3>title 4</h3>
-                                    <p class="creater">name 4</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-						<div class="item">
-                            <div class="center-block" id="item0">
-								<div class="hottest-note">
-                                    <h3>title 5</h3>
-                                    <p class="creater">name 5</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-						<div class="item">
-                            <div class="center-block" id="item0">
-								<div class="hottest-note">
-                                    <h3>title 6</h3>
-                                    <p class="creater">name 6</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-						<div class="item">
-                            <div class="center-block" id="item0">
-								<div class="hottest-note">
-                                    <h3>title 7</h3>
-                                    <p class="creater">name 7</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-						<div class="item">
-                            <div class="center-block" id="item0">
-								<div class="hottest-note">
-                                    <h3>title 8</h3>
-                                    <p class="creater">name 8</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-						<div class="item">
-                            <div class="center-block" id="item0">
-								<div class="hottest-note">
-                                    <h3>title 9</h3>
-                                    <p class="creater">name 9</p>
-                                    <p class="note">asdasdasdaasdasdasdadfdfdfdfdfdf
-									dfdfdddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddddddddddddddddddddddddd
-									dddddddddddddddddddddddddddsdasd</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+									<div class="carousel-inner" id="content">
+										<?php require("getHotNote.php"); ?>
                     <div class="button">
                         <!-- Carousel Navigation -->
                         <a class="carousel-control left" href="#myCarousel"

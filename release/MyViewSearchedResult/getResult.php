@@ -15,12 +15,12 @@
   if (empty($_SESSION["user_id"])) {
     $noteme=0;
   } else {
-    $notme = $_SESSION["user_id"];
+    $noteme = $_SESSION["user_id"];
   }
 
   require("../connectDB.php");
   $result=mysql_query("SELECT * FROM Notes
-											 WHERE topic = '$topic' and user_id = $notme");
+											 WHERE topic = '$topic' and user_id = $noteme");
 
   $ifhaveres = 0;
   while ($row=mysql_fetch_array($result)){

@@ -8,6 +8,7 @@
 * @return print if succeed login message as feedback
 * @see  #session_start()
 */
+  session_start();
   if (!empty($_SESSION['user_id'])) {
     echo  "<script type='text/javascript'>alert('You have alreadly Logged in');location.href='../Login_Main/Login_Main.php'</script>";
     exit;
@@ -30,6 +31,6 @@
     $_SESSION['username'] = $db_username;
     echo  "<script type='text/javascript'>alert('Log In Successfully');location.href='../Login_Main/Login_Main.php'</script>";
   }else {
-    echo  "<script type='text/javascript'>alert('Invalide Username or Password');location.href='../Login_Main/Login_Main.php'</script>";
+    echo  "<script type='text/javascript'>alert('Invalide Username or Password');location.href='../MainPage/MainPage.php'</script>";
   }
 ?>

@@ -5,10 +5,6 @@
  *  @param  _note_id
  *  @return _article, _article_url, _note_content, _topic, _tag, _hot, _ifpublicize
  */
-  if (empty($_SESSION['user_id'])) {
-    echo "You Must Log in";
-    exit;
-  }
   if (!empty($_GET["_note_id"])) {
     $Noteid = $_GET["_note_id"];
   } else {
