@@ -2,7 +2,6 @@
 /**
  *	@author Davin Yu, Yao Bei
  */
-	session_start();
 	require("../connectDB.php");
 	$result=mysql_query("SELECT DISTINCT tag
 		 									 FROM Notes

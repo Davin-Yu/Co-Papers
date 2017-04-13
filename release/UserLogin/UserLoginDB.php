@@ -8,7 +8,6 @@
 * @return print if succeed login message as feedback
 * @see  #session_start()
 */
-  session_start();  //This help to keep track of user info. from page to page
   if (!empty($_SESSION['user_id'])) {
     echo  "<script type='text/javascript'>alert('You have alreadly Logged in');location.href='../Login_Main/Login_Main.php'</script>";
     exit;

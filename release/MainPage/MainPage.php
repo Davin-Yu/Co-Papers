@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +45,7 @@
                             <option value = "Math">Math</option>
                             <option value = "Medichine">Medicine</option>
                             <option value = "Physics">Physics</option>
-														<option value = "Others">Physics</option>
+														<option value = "Others">Others</option>
                         </select>
                     </div>
                     <div class="form-group" id="button">
