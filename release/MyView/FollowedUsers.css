@@ -1,0 +1,131 @@
+body{
+    background-color: #fcfcfc;
+    min-width: 660px;
+}    
+.navbar{
+    height: 61px;
+    border-bottom: 1px solid #c4c4c4;
+}
+.navbar-header img{
+    margin: -6px 0 0 -1px;
+}
+#new-note-button{
+    height: 40px; 
+    background-color: #96cdcd; 
+    font-size: 19px; 
+    color: #ffffff;
+    margin: 8px 0 0 200px;
+}
+.collapse ul{
+    width: 310px;
+    padding: 5px 0 0 20px;
+    font-family: Arial; 
+    font-size: 18px;
+}
+.collapse-button{
+    padding: 5px 0 0 0;
+}
+.navbar-ex1-collapse{
+    background-color: #f5f5f5;
+}
+#header-form{
+    margin-top: 12px;
+}
+.center-block{
+    width: 70%;
+}
+.Left-nav{
+    margin-top: 25px;
+    float: left;
+    height: 220px;
+    width: 270px;
+}
+.Left-nav a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.Left-nav :link{
+    color: #000;
+}
+.Left-nav a:hover{
+    background-color: #f5f5f5; 
+}
+.Left-nav-Title{
+    color: #96cdcd; 
+    font-family: Arial; 
+    font-size: 16px; font-weight: bold;
+}
+.lsit1{
+    padding-top: 8px; 
+    border-top: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+}
+.list-pic{
+    margin: 20px 5px 0 5px;
+}
+.list-words{
+    margin: -63px 0 0 60px;
+}
+.list-sub-title{
+    font-weight: bold; 
+    font-family: Arial; 
+    font-size: 14px;
+}
+.list-description{
+    font-family: Arial;
+    font-size: 14px;
+}
+.list-info{
+    font-family: Arial; 
+    font-size: 12px; 
+    color: #696969;
+}
+.list2, .list3, .list4{
+    padding-top: 4px; 
+    border-bottom: 1px solid #c4c4c4;
+}
+.left-nav-footer span{
+    font-family: Arial; 
+    font-size: 12px; color: #696969;
+}
+.main-container{
+    float: left;
+    width: 660px; 
+    margin: -220px 0 40px 340px;
+}
+.main-title{
+    border-bottom: 1px solid #c4c4c4;
+}
+.main-title p{
+    color: #96cdcd; 
+    font-family: Arial; 
+    font-size: 16px; font-weight: bold;
+}
+.title-slogan{
+    border-bottom: 1px solid #c4c4c4; 
+    margin: 20px 0 10px 0;
+}
+.title-slogan p{
+    font-size: 25px; 
+    padding: 0 0 30px 40px;
+}
+.created-notes-list{
+    list-style: none;
+}
+.note{
+    list-style: none; 
+}
+.cut-off-line{
+    border-top: 1px solid #c4c4c4; 
+}
+#unfollow-button{
+    height: 25px; 
+    background-color: #96cdcd; 
+    font-size: 14px; 
+    color: #ffffff;
+    margin-left: 300px;
+    margin-top: -70px;
+}
+
+

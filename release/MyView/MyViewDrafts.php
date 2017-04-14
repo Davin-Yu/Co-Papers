@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>PersonalView</title>
+    <title>PersonalView-My Drafts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1" />
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="PersonalView.css">
+    <link rel="stylesheet" type="text/css" href="MyDrafts.css">
     <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 </head>
@@ -109,7 +109,7 @@
                     <p>Notes</p>
                 </div>
                 <div class="title-slogan">
-                    <p>Literature notes you have created</p>
+                    <p>Drafts you have saved</p>
                 </div>
 
                 <ul class="created-notes-list">
@@ -132,8 +132,31 @@
                                 <li>
                                     <span><a href="">Delete</a></span>
                                 </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="cut-off-line"></div>
+
+                <ul class="created-notes-list">
+                    <li class="note">         
+                        <h4><a href="">Software Engineering group project</a>
+                        </h4>
+                        <h5>
+                            <span class="glyphicon glyphicon-tags"></span>&nbsp
+                            <span>computer;</span>
+                            <span>software;</span>
+                        </h5>
+                        <div class="list-inter-span">
+                            <ul>
                                 <li>
-                                    <span class="follower-num">1 follower</span>
+                                    <span><a href="">View source</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="">Edit</a></span>
+                                </li>
+                                <li>
+                                    <span><a href="">Delete</a></span>
                                 </li>
                             </ul>
                         </div>
@@ -161,9 +184,6 @@
                                 <li>
                                     <span><a href="">Delete</a></span>
                                 </li>
-                                <li>
-                                    <span class="follower-num">1 follower</span>
-                                </li>
                             </ul>
                         </div>
                     </li>
@@ -189,38 +209,6 @@
                                 </li>
                                 <li>
                                     <span><a href="">Delete</a></span>
-                                </li>
-                                <li>
-                                    <span class="follower-num">1 follower</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <div class="cut-off-line"></div>
-
-                <ul class="created-notes-list">
-                    <li class="note">         
-                        <h4><a href="">Software Engineering group project</a>
-                        </h4>
-                        <h5>
-                            <span class="glyphicon glyphicon-tags"></span>&nbsp
-                            <span>computer;</span>
-                            <span>software;</span>
-                        </h5>
-                        <div class="list-inter-span">
-                            <ul>
-                                <li>
-                                    <span><a href="">View source</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Edit</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Delete</a></span>
-                                </li>
-                                <li>
-                                    <span class="follower-num">1 follower</span>
                                 </li>
                             </ul>
                         </div>
