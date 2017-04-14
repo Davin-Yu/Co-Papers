@@ -92,7 +92,7 @@
         <!--Footer-->
         <div class="center-block" id="footer">
             <div class="footer-span">
-                <p><a href="https://github.com/violazz/Group_Project_dev">About us</a></p>
+                <p><a href="https://github.com/Davin-Yu">About us</a></p>
             </div>
             <div class="footer-porperty">
                 <p>© 2017 Co-Papers. All rights reserved.</p>
