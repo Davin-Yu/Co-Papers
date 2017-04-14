@@ -17,6 +17,8 @@
 ### Comment
 2. Need to add Javascript for user sign up authentication
 3. add 'all category' search for notes
+4. Add timestamp
+5. Are you sure to delete?
 
 
 ### Issues to mention
