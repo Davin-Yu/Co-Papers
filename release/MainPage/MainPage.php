@@ -95,7 +95,7 @@
                 <p><a href="https://github.com/violazz/Group_Project_dev">About us</a></p>
             </div>
             <div class="footer-porperty">
-                <p>© 2017 Co-Papers.net. All rights reserved.</p>
+                <p>© 2017 Co-Papers. All rights reserved.</p>
             </div>
         </div>
         <!--Hidden loginBox-->

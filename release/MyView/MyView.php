@@ -1,3 +1,7 @@
+<?php session_start();
+      require("../testLogin.php");
+      require("getNumber.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,55 +17,59 @@
     <div class="container-fluid">
         <!--Top Navgiation-->
         <nav class="navbar navbar-default" role="navigation">
-            <div class="container-fluid">  
-                <!--Logo & Button section -->  
-                <div class="navbar-header">  
+            <div class="container-fluid">
+                <!--Logo & Button section -->
+                <div class="navbar-header">
                     <div class="collapse-button">
                         <button type="button" class="navbar-toggle"
-                        data-toggle="collapse"   
-                        data-target=".navbar-ex1-collapse">  
+                        data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
                             <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>  
-                            <span class="icon-bar"></span>  
-                            <span class="icon-bar"></span>  
-                        </button>  
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
                     </div>
-                    <img src="LOGO.png" alt="logo">    
-                </div> 
-                <!-- Menu section -->  
+                    <img src="LOGO.png" alt="logo">
+                </div>
+                <!-- Menu section -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav navbar-left">  
-                        <li><a href="# ">Hello User</a></li>  
-                        <li><a href="# ">Home</a></li>  
-                        <li><a href="#">Log out</a></li>
-                    </ul> 
-                    <button type="submit" class="btn btn-default btn-sm avtive" id="new-note-button">
-                        <span class="glyphicon glyphicon-plus"></span>&nbspCreate new note
-                    </button>                
+                    <ul class="nav navbar-nav navbar-left">
+                      <li><a href="../MyView/MyView.php"> Hello <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?></a></li>
+                      <li><a href="../Login_Main/Login_Main.php ">Home</a></li>
+                      <li><a href="../UserLogin/EndSession.php">Log out</a></li>
+                    </ul>
+                    <button type="button" class="btn btn-default btn-sm avtive" id="new-note-button" onclick="location.href='../NoteCreate/NoteCreate.php'">
+                        <span class="glyphicon glyphicon-plus"></span> Create New Note
+                    </button>
                     <!--Form-->
-                    <form action="##" class="navbar-form navbar-right" id="header-form" rol="search">
+                    <form  action="linker.php" class="navbar-form navbar-right" id="header-form" rol="search" method="POST">
                         <div class="form-group">
-                            <select class="form-control col-lg-5">
-                                <option>Topics</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                            <select class="form-control col-lg-5"  name="_topic">
+                              <option>Choose Topics</option>
+                              <option value = "Biochamisry">Biochamisry</option>
+                              <option value = "Computer Science">Computer Science</option>
+                              <option value = "Chemical">Chemical</option>
+                              <option value = "Literature">Literature</option>
+                              <option value = "Math">Math</option>
+                              <option value = "Medichine">Medicine</option>
+                              <option value = "Physics">Physics</option>
+  														<option value = "Others">Others</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Keywords" />
+                            <input type="text" class="form-control" placeholder="Keywords" name="_keyword" required="required" />
                         </div>
-                        <button type="submit" class="btn btn-default">Search</button>
+                        <button type="submit" class="btn btn-default">Search My Notes</button>
                     </form>
-                </div>  
-            </div>  
+                </div>
+            </div>
         </nav>
         <!--Main Content-->
         <div class="center-block">
             <div class="Left-nav">
                 <p class="Left-nav-Title">Lists</p>
-                <a href="">
+                <a href="MyView.php">
                     <div class="lsit1">
                         <div class="list-pic">
                             <img src="my note.png" alt="my notes">
@@ -69,11 +77,11 @@
                         <div class="list-words">
                             <p class="list-sub-title">My Notes</p>
                             <p class="list-description">Here you can see the literature notes you created.</p>
-                            <p class="list-info"><span class="glyphicon glyphicon-eye-open"></span>&nbspI have 0 notes.</p>
+                            <p class="list-info"><span class="glyphicon glyphicon-eye-open"></span> I have <?php echo $pub_article_num; ?> notes.</p>
                         </div>
                     </div>
                 </a>
-                <a href="">
+                <a href="MyViewDrafts.php">
                     <div class="list2">
                         <div class="list-pic">
                             <img src="my drafts.png" alt="my drafts">
@@ -81,11 +89,11 @@
                         <div class="list-words">
                             <p class="list-sub-title">My Drafts</p>
                             <p class="list-description">Here you can see the literature notes you haven't submited.</p>
-                            <p class="list-info"><span class="glyphicon glyphicon-eye-open"></span>&nbspI have 0 note drafts</p>
+                            <p class="list-info"><span class="glyphicon glyphicon-eye-open"></span> I have <?php echo $draft_article_num; ?> note drafts</p>
                         </div>
                     </div>
                 </a>
-                <a href="">
+                <a href="MyViewFollower.php">
                     <div class="list3">
                         <div class="list-pic">
                             <img src="my follow.png" alt="my follow">
@@ -93,12 +101,12 @@
                         <div class="list-words">
                             <p class="list-sub-title">Users I Followed</p>
                             <p class="list-description">Here's where you can see a list of all the users you're following.</p>
-                            <p class="list-info"><span class="glyphicon glyphicon-eye-open"></span>&nbspI follow 0 users.</p>
-                        </div>  
+                            <p class="list-info"><span class="glyphicon glyphicon-eye-open"></span> I am following <?php echo $follower_num; ?>  users.</p>
+                        </div>
                     </div>
                 </a>
                 <div class="left-nav-footer">
-                    <span>© 2017 Co-Papers.net. All rights reserved</span>
+                    <span>© 2017 Co-Papers. All rights reserved</span>
                     <br>
                     <span><a href="">About us</a></span>
                 </div>
@@ -111,124 +119,9 @@
                 <div class="title-slogan">
                     <p>Literature notes you have created</p>
                 </div>
-
-                <ul class="created-notes-list">
-                    <li class="note">         
-                        <h4><a href="">Software Engineering group project</a>
-                        </h4>
-                        <h5>
-                            <span class="glyphicon glyphicon-tags"></span>&nbsp
-                            <span>computer;</span>
-                            <span>software;</span>
-                        </h5>
-                        <div class="list-inter-span">
-                            <ul>
-                                <li>
-                                    <span><a href="">View source</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Edit</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Delete</a></span>
-                                </li>
-                                <li>
-                                    <span class="follower-num">1 follower</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <div class="cut-off-line"></div>
-
-                <ul class="created-notes-list">
-                    <li class="note">         
-                        <h4><a href="">Software Engineering group project</a>
-                        </h4>
-                        <h5>
-                            <span class="glyphicon glyphicon-tags"></span>&nbsp
-                            <span>computer;</span>
-                            <span>software;</span>
-                        </h5>
-                        <div class="list-inter-span">
-                            <ul>
-                                <li>
-                                    <span><a href="">View source</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Edit</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Delete</a></span>
-                                </li>
-                                <li>
-                                    <span class="follower-num">1 follower</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <div class="cut-off-line"></div>
-
-                <ul class="created-notes-list">
-                    <li class="note">         
-                        <h4><a href="">Software Engineering group project</a>
-                        </h4>
-                        <h5>
-                            <span class="glyphicon glyphicon-tags"></span>&nbsp
-                            <span>computer;</span>
-                            <span>software;</span>
-                        </h5>
-                        <div class="list-inter-span">
-                            <ul>
-                                <li>
-                                    <span><a href="">View source</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Edit</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Delete</a></span>
-                                </li>
-                                <li>
-                                    <span class="follower-num">1 follower</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <div class="cut-off-line"></div>
-
-                <ul class="created-notes-list">
-                    <li class="note">         
-                        <h4><a href="">Software Engineering group project</a>
-                        </h4>
-                        <h5>
-                            <span class="glyphicon glyphicon-tags"></span>&nbsp
-                            <span>computer;</span>
-                            <span>software;</span>
-                        </h5>
-                        <div class="list-inter-span">
-                            <ul>
-                                <li>
-                                    <span><a href="">View source</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Edit</a></span>
-                                </li>
-                                <li>
-                                    <span><a href="">Delete</a></span>
-                                </li>
-                                <li>
-                                    <span class="follower-num">1 follower</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-                <div class="cut-off-line"></div>
+                <?php require("getPublicNotes.php"); ?>
             </div>
-        </div> 
-    </div>  
+        </div>
+    </div>
 </body>
 </html>
