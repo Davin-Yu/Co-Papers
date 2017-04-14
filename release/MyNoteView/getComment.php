@@ -23,7 +23,7 @@
    <div class="Other-comments">
        <ul class="created-comments-list">
            <li class="comment" >
-               <h4><a href="../OtherView/OtherView?_user_id=$row[1]">$com_name</a></h4>
+               <h4><a href="../OtherView/OtherView.php?_user_id=$row[1]">$com_name</a></h4>
                <div class="comment-content">
                    <p>$row[3]</p>
                </div>

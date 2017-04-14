@@ -21,7 +21,7 @@
                                       <span><a href="//$row[3]" target="_blank">View source</a></span>
                                   </li>
                                   <li>
-                                      <span><a href="../MyNoteEdit/MyNoteEdit.php?_edit_id=$row[0]">Edit</a></span>
+                                      <span><a href="../MyNoteEdit/MyNoteEdit.php?_edit_note=$row[0]">Edit</a></span>
                                   </li>
                                   <li>
                                       <span><a href="deleteNote.php?_note_id=$row[0]">Delete</a></span>
