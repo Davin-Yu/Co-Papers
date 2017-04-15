@@ -108,7 +108,7 @@
                 <div class="left-nav-footer">
                     <span>© 2017 Co-Papers. All rights reserved</span>
                     <br>
-                    <span><a href="https://github.com/Davin-Yu">About us</a></span>
+                    <span><a href="../AboutUs/AboutUs.html" target="_blank">About us</a></span>
                 </div>
             </div>
             <!--Main container-->
