@@ -99,7 +99,7 @@ require("../testLogin.php"); ?>
                 <p><a href="https://github.com/Davin-Yu">About us</a></p>
             </div>
             <div class="footer-porperty">
-                <p>© 2017 Co-Papers.net. All rights reserved.</p>
+                <p>© 2017 Co-Papers. All rights reserved.</p>
             </div>
         </div>
         <!--Hidden loginBox-->

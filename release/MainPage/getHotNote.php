@@ -1,5 +1,5 @@
 <?php
-  $num = 8; //test
+  $num = 9; //test
   require("../connectDB.php");
   $result = mysql_query ("SELECT *
                           FROM Notes
