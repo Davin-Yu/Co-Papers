@@ -1,5 +1,5 @@
 <?php session_start();
-require("../testLogin.php"); ?>
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,6 +1,11 @@
 <?php
   if (!empty($_GET["_user_id"])) {
     $_otherid = $_GET["_user_id"];
+    if (!empty($_SESSION["user_id"])) {
+      if ($_SESSION["user_id"] == $_otherid ) {
+        echo  "<script> location.href='../MyView/MyView.php' </script>";
+      }
+    }
   } else {
     $_otherid = 2;    //For Testing
   }

@@ -20,7 +20,7 @@
 
   require("../connectDB.php");
   $result=mysql_query("SELECT * FROM Notes
-											 WHERE topic = '$topic' and ifpublicize = 1 and user_id != $noteme");
+											 WHERE topic = '$topic' and ifpublicize = 1");
 
   $ifhaveres = 0;
   while ($row=mysql_fetch_array($result)){
