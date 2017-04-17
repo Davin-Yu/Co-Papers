@@ -14,6 +14,9 @@
     exit;
   }
   $Uname = $_GET["_username"];
+  if (strlen($Uname) < 2 ) {
+    echo  "<script type='text/javascript'>alert('Invalide Username or Password');location.href='../MainPage/MainPage.php'</script>";
+  }
   $Upass = MD5($_GET["_password"]);
   require("../connectDB.php");
   $result = mysql_query ("SELECT * FROM
