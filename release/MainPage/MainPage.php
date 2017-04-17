@@ -110,10 +110,10 @@
                         <div class="modal-body">
                             <form action="../UserLogin/UserLoginDB.php" method="GET" class="form col-md-12 center-block">
                                 <div class="form-group">
-                                    <input type="text" class="form-control input-lg" placeholder="Username" name="_username">
+                                    <input type="text" class="form-control input-lg" placeholder="Username" name="_username" required="required">
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control input-lg" placeholder="Password" name="_password">
+                                    <input type="password" class="form-control input-lg" placeholder="Password" name="_password" required="required">
                                 </div>
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
