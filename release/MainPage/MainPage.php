@@ -18,10 +18,13 @@
                <div class="center-block" id="Logo">
                    <p>Co-Papers</p>
                </div>
-               <div class="LOGIN">
-                   <p><a href="javascript:" onClick="loginBox.style.display='';">Log in</a>
-                   </p>
-               </div>
+							 <div class="nav-list">
+								 <ul class="right-spans">
+								 <li><a href="javascript:" onClick="loginBox.style.display='';">Create Note |</a></li>
+								 <li><a href="javascript:" onClick="loginBox.style.display='';">Log in |</a></li>
+								 <li><a href="../UserSignUp/UserSignUp.php">Sign Up</a></li>
+							 	 </ul>
+							 </div>
             </div>
         </div>
         <!--Main Content-->

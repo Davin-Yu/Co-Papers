@@ -21,9 +21,9 @@ require("../testLogin.php"); ?>
                </div>
                <div class="nav-list">
                    	<ul class="right-spans">
-										 <li><a href="../MyView/MyView.php"style="color:rgb(255,255,255)"> <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?>'s NoteBook |</a></li>
-										 <li><a href="../NoteCreate/NoteCreate.php"style="color:rgb(255,255,255)">Create Note |</a></li>
-										 <li><a href="../UserLogin/EndSession.php"style="color:rgb(255,255,255)">Log out</a></li>
+										 <li><a href="../MyView/MyView.php"> <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?>'s NoteBook |</a></li>
+										 <li><a href="../NoteCreate/NoteCreate.php">Create Note |</a></li>
+										 <li><a href="../UserLogin/EndSession.php">Log out</a></li>
                     </ul>
                </div>
             </div>
