@@ -34,7 +34,7 @@
                 <!-- Menu section -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav navbar-left">
-											<li><a href="../MyView/MyView.php"> Hello <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?></a></li>
+											<li><a href="../MyView/MyView.php"> Hello <?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo ",";} ?></a></li>
 											<li><a href="../Login_Main/Login_Main.php ">Home</a></li>
 											<li><a href="../UserLogin/EndSession.php">Log out</a></li>
                     </ul>

@@ -20,7 +20,7 @@
   $row2=mysql_fetch_assoc($result2);
   $_otherID = $row[1];
   $_username = $row2['username'];
-  if ($_SESSION["user_id"]) {
+  if (!empty($_SESSION["user_id"])) {
     if ($_SESSION["user_id"] == $_otherID) {
       echo  "<script> location.href='../MyNoteView/MyNoteView.php?_note_id=$Noteid' </script>";
     }
