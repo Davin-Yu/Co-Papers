@@ -1,5 +1,5 @@
 <?php
-    $topic = $_POST["_topic"];
+    $tag = $_POST["_tag"];
     $keyword = $_POST["_keyword"];
-    echo  "<script> location.href='../MyViewSearchedResult/MyViewSearchedResult.php?_topic=$topic&_keyword=$keyword' </script>";
+    echo  "<script> location.href='../MyViewSearchedResult/MyViewSearchedResult.php?_tag=$tag&_keyword=$keyword' </script>";
  ?>

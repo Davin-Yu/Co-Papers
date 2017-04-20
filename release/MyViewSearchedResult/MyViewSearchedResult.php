@@ -49,15 +49,9 @@ require("../testLogin.php"); ?>
         		<p>Search My Notes</p>
 						<form action="linker.php" class="form-inline navbar-form" id="search-form" rol="search" method="POST">
         			<div class="form-group">
-        				<select class="form-control col-lg-5" name="_topic">
-									<option select="selected" value = "Others">Others</option>
-									<option value = "Biochemisry">Biochemisry</option>
-									<option value = "Computer Science">Computer Science</option>
-									<option value = "Chemical">Chemical</option>
-									<option value = "Literature">Literature</option>
-									<option value = "Math">Math</option>
-									<option value = "Medical">Medicine</option>
-									<option value = "Physics">Physics</option>
+								<select class="form-control col-lg-5"  name="_tag">
+									<?php echo "<option>Choose Tag</option>"; ?>
+									<?php require("getTagfromDB.php") ?>
 								</select>
         			</div>
         			<div class="form-group">

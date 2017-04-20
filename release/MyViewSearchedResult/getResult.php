@@ -1,8 +1,8 @@
 <?php
-  if (empty($_GET["_topic"])) {
-    $topic = "Computer Science";  //test
+  if (empty($_GET["_tag"])) {
+    $tag = "";  //test
   } else {
-    $topic = $_GET["_topic"];
+    $tag = $_GET["_tag"];
   }
   if (empty($_GET["_keyword"])) {
     $keywords = "Sample";         //test
@@ -20,7 +20,7 @@
 
   require("../connectDB.php");
   $result=mysql_query("SELECT * FROM Notes
-											 WHERE topic = '$topic' and user_id = $noteme");
+											 WHERE tag = '$tag' and user_id = $noteme");
 
   $ifhaveres = 0;
   while ($row=mysql_fetch_array($result)){

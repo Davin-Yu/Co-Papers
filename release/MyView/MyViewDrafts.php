@@ -45,17 +45,10 @@
                     <!--Form-->
                     <form  action="linker.php" class="navbar-form navbar-right" id="header-form" rol="search" method="POST">
                         <div class="form-group">
-                            <select class="form-control col-lg-5"  name="_topic">
-                              <option>Choose Topics</option>
-                              <option value = "Biochamisry">Biochamisry</option>
-                              <option value = "Computer Science">Computer Science</option>
-                              <option value = "Chemical">Chemical</option>
-                              <option value = "Literature">Literature</option>
-                              <option value = "Math">Math</option>
-                              <option value = "Medichine">Medicine</option>
-                              <option value = "Physics">Physics</option>
-  														<option value = "Others">Others</option>
-                            </select>
+                          <select class="form-control col-lg-5"  name="_tag">
+                            <?php echo "<option>Choose Tag</option>"; ?>
+                            <?php require("getTagfromDB.php") ?>
+                          </select>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Keywords" name="_keyword" required="required" />
