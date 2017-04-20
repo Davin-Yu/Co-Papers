@@ -120,8 +120,8 @@
                                 </div>
                                 <div class="form-group">
                                     <button class="btn btn-primary btn-lg btn-block" type="submit">Sign In</button>
-                                    <span id="forgetpass"><a href="#">Forgot password</a></span>
-                                    <span><a href="../UserSignUp/UserSignUp.php" class="pull-right">Sign up</a></span>
+                                    <span id="forgetpass"><a href="#"><h4>Forgot password</h4></a></span>
+                                    <span><a href="../UserSignUp/UserSignUp.php" class="pull-right"><h4>Sign up</h4></a></span>
                                 </div>
                             </form>
                         </div>
