@@ -7,7 +7,7 @@
   session_start();
   // echo 'You Log our as'.$_SESSION['username'];
   if (empty($_SESSION['user_id'])) {
-    echo "You haven't log in";
+    echo  "<script type='text/javascript'>alert('You haven't log in');location.href='../MainPage/MainPage.php'</script>";
     exit;
   }
 

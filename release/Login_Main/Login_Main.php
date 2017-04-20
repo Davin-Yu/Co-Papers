@@ -37,19 +37,18 @@ require("../testLogin.php"); ?>
                 </div>
 								<form action="linker.php" class="center-block" id="Search-form" rol="search" method="POST">
                     <div class="form-group" id="searchKey">
-											<input type="text" class="form-control" name="_keyword" placeholder="Keywords" required="required"/>
+											<input type="text" class="form-control" name="_keyword" placeholder="Keywords" />
                     </div>
                     <div class="form-group" id="topicsChoice">
                         <select class="form-control" name="_topic">
-                            <option>Choose Topics</option>
-                            <option value = "Biochamisry">Biochamisry</option>
-                            <option value = "Computer Science">Computer Science</option>
-                            <option value = "Chemical">Chemical</option>
-                            <option value = "Literature">Literature</option>
-                            <option value = "Math">Math</option>
-                            <option value = "Medichine">Medicine</option>
-                            <option value = "Physics">Physics</option>
-														<option value = "Others">Others</option>
+													<option value = "Others">Others Topics</option>
+													<option value = "Biochamisry">Biochamisry</option>
+													<option value = "Computer Science">Computer Science</option>
+													<option value = "Chemical">Chemical</option>
+													<option value = "Literature">Literature</option>
+													<option value = "Math">Math</option>
+													<option value = "Medichine">Medicine</option>
+													<option value = "Physics">Physics</option>
                         </select>
                     </div>
                     <div class="form-group" id="button">

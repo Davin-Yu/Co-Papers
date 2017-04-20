@@ -36,7 +36,7 @@
                 </div>
 								<form action="linker.php" class="center-block" id="Search-form" rol="search" method="POST">
                     <div class="form-group" id="searchKey">
-											<input type="text" class="form-control" name="_keyword" placeholder="Keywords" />
+											<input type="text" class="form-control" name="_keyword" placeholder="Keywords" required="required"/>
                     </div>
                     <div class="form-group" id="topicsChoice">
                         <select class="form-control" name="_topic">
