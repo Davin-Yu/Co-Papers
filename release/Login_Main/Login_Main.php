@@ -96,7 +96,8 @@ require("../testLogin.php"); ?>
         <!--Footer-->
         <div class="center-block" id="footer">
             <div class="footer-span">
-                <p><a href="../AboutUs/AboutUs.html" target="_blank">About us</a></p>
+                <p><a href="../AboutUs/AboutUs.html" target="_blank">About us</a> |
+									 <a href="../Feedback/Feedback.php" target="_blank">Feedback</a></p>
             </div>
             <div class="footer-porperty">
                 <p>© 2017 Co-Papers. All rights reserved.</p>
