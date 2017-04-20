@@ -44,7 +44,7 @@ require("inchot.php"); ?>
         <!--Main Content-->
         <div class="center-block">
             <div class="Page-Title">
-                <p><?php echo $_username; ?>'s Note</p>
+                <p><?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "visitor";} ?>'s Note</p>
             </div>
 						<div class="Note-body">
                 <div class="Note-content">
@@ -61,7 +61,7 @@ require("inchot.php"); ?>
                 <div class="Comment-Edit-box">
                     <div class="form-group" id="commentAusers">
 											<form role="form" action="postComment.php" method="GET">
-                        <label><?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "test";} ?></label>
+                        <label><?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "visitor";} ?></label>
                         <textarea class="form-control" id="comment-textarea" name="_comment_content" required="required" rows="3"></textarea>
                         <div class="comment-button" id="button-comment">
                             <button type="submit" class="btn btn-primary btn-sm" name="_note_id" value="<?php echo $Noteid; ?>">Comment</button>
