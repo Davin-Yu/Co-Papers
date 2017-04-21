@@ -52,7 +52,7 @@
                     <!--PassWord-->
                     <div class="form-group">
                         <label for="name">Password</label>
-                        <input type="password" class="form-control" name="_password" required="required" id="password">
+                        <input type="password" class="form-control" name="_password" required="required" minlength = "8" id="password">
                         <div class="support-hint1">
                             <div class="triangle-right"></div>
                             <div class="hint1">
