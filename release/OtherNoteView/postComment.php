@@ -1,4 +1,5 @@
 <?php
+  session_start();
   require("../testLogin.php");
   session_start();    //for self-testing!!!!
   $user_id = $_SESSION["user_id"];
