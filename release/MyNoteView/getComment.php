@@ -13,7 +13,9 @@
  require("../connectDB.php");
  $result = mysql_query ("SELECT * FROM
                          Comments WHERE note_id = '$Noteid'", $connection);
+ $num = 0;
  while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+   $num = $num + 1;
    $name_result = mysql_query("SELECT * FROM
                               Users WHERE user_id = '$row[1]'",$connection);
    $com_name_row = mysql_fetch_array($name_result, MYSQL_NUM);
@@ -27,9 +29,18 @@
                <div class="comment-content">
                    <p>$row[3]</p>
                </div>
-               <h5 >
-                   <a href="">Reply</a>
-               </h5>
+               <div id="show$num">
+    						<button type="button" id="reply" class="btn btn-primary" data-toggle="collapse"
+    							data-target="#Comment-Edit-box$num">Reply
+    						</button>
+                <div id="Comment-Edit-box$num" class ="collapse">
+                  <div class="form-group" id="commentAusers">
+                    <textarea class="form-control" name="_reply" id="comment-textarea-$num" rows="5"></textarea>
+                    <div class="comment-button" id="button-comment">
+                      <button type="button" id="reply_2" class="btn btn-primary btn-sm" onclick="">Reply</button>
+                    </div>
+                  </div>
+                </div>
            </li>
        </ul>
    </div>

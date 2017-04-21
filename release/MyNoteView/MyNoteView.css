@@ -1,6 +1,6 @@
 body{
     background-color: #f7f7f7;
-}    
+}
 .navbar{
 	height: 61px;
 	border-bottom: 1px solid #c4c4c4;
@@ -10,7 +10,7 @@ body{
 }
 .collapse ul{
 	padding: 5px 0 0 20px;
-	font-family: Arial; 
+	font-family: Arial;
 	font-size: 18px;
 }
 .collapse-button{
@@ -33,39 +33,56 @@ body{
 	font-family: Georgia,serif;
 }
 .Note-body{
-	width: 720px; 
-	margin: 0 auto; 
-	background-color: #fff; 
-	border: 1px solid #cccccc; 
+	width: 720px;
+	margin: 0 auto;
+	background-color: #fff;
+	border: 1px solid #cccccc;
 	box-shadow:0 0 8px #e6e6e6;
 }
 .Note-content{
-	width: 660px; 
+	width: 660px;
 	margin: 25px auto;
 }
 .Note-contet-acitivity-title h3{
 	text-align: center;
 }
 .url-button{
-	width: 100px; 
+	width: 100px;
 	margin: 10px auto;
 }
 .Other-comments-first{
-	margin: 20px 0 0 64px; 
-	width: 720px; 
-	overflow: hidden; 
-	border-top: 1px solid #c4c4c4; 
+	margin: 20px 0 0 64px;
+	width: 720px;
+	overflow: hidden;
+	border-top: 1px solid #c4c4c4;
+}
+.Other-comments-first #reply{
+	margin-top: 5px;
+	margin-bottom:10px;
+}
+.Other-comments #reply{
+	margin-bottom:10px;
+}
+.Other-comments-first #reply_2{
+	margin-top: 5px;
+}
+.Other-comments #reply_2{
+	margin-top: 5px;
+}
+.comment-button{
+	float:right;
 }
 .Other-comments{
-	margin: 5px 0 0 64px; 
-	width: 720px;  
+	margin: 5px 0 0 64px;
+	width: 720px;
+	overflow: hidden;
 	border-top: 1px solid #c4c4c4;
 }
 .created-comments-list{
 	list-style: none;
 }
 .comment{
-	list-style: none; 
+	list-style: none;
 	padding-top: 10px;
 }
 .comment-content h5{
@@ -79,4 +96,34 @@ body{
 }
 .navbar-ex1-collapse{
 	background-color: #f5f5f5;
+}
+.Replied-content{
+	display: block;
+	border-radius: 5px;
+	list-style: none;
+	width: 500px;
+	overflow: auto;
+	background-color: #d5d5d5;
+}
+.Replied-content p{
+	padding: 5px 0 0 5px;
+}
+#new-note-button{
+    height: 40px;
+    background-color: #96cdcd;
+    font-size: 19px;
+    color: #ffffff;
+    margin: 8px 0 0 200px;
+}
+.collapse ul{
+    width: 400px;
+    padding: 5px 0 0 20px;
+    font-family: Arial;
+    font-size: 18px;
+}
+.collapse-button{
+    padding: 5px 0 0 0;
+}
+.navbar-ex1-collapse{
+    background-color: #f5f5f5;
 }

@@ -128,7 +128,7 @@ require("../testLogin.php"); ?>
 										<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 												<div class="container-fluid">
 														<div class="center-block" id="button-block">
-																<button type="submit" class="btn btn-primary btn-lg" name="_ifpublicize" value="0">Save</button>
+																<button type="submit" class="btn btn-primary btn-lg" name="_ifpublicize" value="0">Save as Draft</button>
 																<button type="submit" class="btn btn-primary btn-lg" name="_ifpublicize" value="1" id="button-publisize">Publisize</button>
 														</div>
 												</div>

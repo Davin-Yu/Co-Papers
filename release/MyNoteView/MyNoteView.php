@@ -38,6 +38,9 @@ require("../testLogin.php"); ?>
 											<li><a href="../Login_Main/Login_Main.php ">Home</a></li>
 											<li><a href="../UserLogin/EndSession.php">Log out</a></li>
                     </ul>
+										<button type="button" class="btn btn-default btn-sm avtive" id="new-note-button" onclick="location.href='../NoteCreate/NoteCreate.php'">
+												<span class="glyphicon glyphicon-plus"></span> Create New Note
+										</button>
                 </div>
             </div>
         </nav>
@@ -66,7 +69,6 @@ require("../testLogin.php"); ?>
             <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
                 <div class="container-fluid">
                     <div class="center-block" id="button-block">
-                        <button type="button" class="btn btn-primary btn-lg" onclick="location.href='../NoteCreate/NoteCreate.php'">Create New</button>
                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='../MyNoteEdit/MyNoteEdit.php?_edit_note=<?php echo $Noteid; ?>'" id="button-Edit">Edit</button>
                     </div>
                 </div>
