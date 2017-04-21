@@ -1,7 +1,6 @@
 <?php
   session_start();
   require("../testLogin.php");
-  session_start();    //for self-testing!!!!
   $user_id = $_SESSION["user_id"];
   if (empty($_GET["_note_id"])) {
     $Noteid = 1;    //For Testing
