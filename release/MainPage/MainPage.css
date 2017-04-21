@@ -36,6 +36,15 @@ body{
     font-size: 18px;
     color: #ffffff;
 }
+.right-spans a{
+    color: #fff;
+}
+.right-spans a:visited{
+    color: white;
+}
+.Mainsearch{
+    height: 470px;
+}
 .LOGIN{
     position:fixed;
     right:0px;

@@ -13,7 +13,7 @@
 <body>
 	<div class="container-fluid">
         <!--Top Header-->
-		<div class="Header">
+				<div class="Header">
             <div class="container-fluid">
                <div class="center-block" id="Logo">
                    <p>Co-Papers</p>
