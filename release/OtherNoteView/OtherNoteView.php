@@ -44,7 +44,7 @@ require("inchot.php"); ?>
         <!--Main Content-->
         <div class="center-block">
             <div class="Page-Title">
-                <p><?php if (!empty($_SESSION["username"])) {echo $_SESSION["username"];} else {echo "visitor";} ?>'s Note</p>
+                <p><?php echo $_username; ?>'s Note</p>
             </div>
 						<div class="Note-body">
                 <div class="Note-content">
