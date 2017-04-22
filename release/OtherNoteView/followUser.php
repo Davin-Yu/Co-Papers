@@ -1,6 +1,6 @@
 <?php
-  require("../testLogin.php");
   session_start();
+  require("../testLogin.php");
   $user_id = $_SESSION["user_id"];
   if (empty($_GET["_follow_user_id"])) {
     $followid = 2;    //For Testing
