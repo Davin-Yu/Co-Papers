@@ -27,9 +27,25 @@
                <div class="comment-content">
                    <p>$row[3]</p>
                </div>
-               <h5 >
-                   <a href="">Reply</a>
-               </h5>
+eod;
+  $result2 = mysql_query("SELECT * FROM
+                        Replies WHERE comment_id = '$row[0]'", $connection);
+  if ($row2 = mysql_fetch_array($result2, MYSQL_NUM)) {
+    echo <<< eod
+  <div>
+    <p>
+      <i>
+      <hr>
+      &nbsp&nbsp&nbsp
+      <a href="../OtherView/OtherView.php?_user_id=$_otherID">$_username</a>
+      : $row2[3]
+      </i>
+    </p>
+  </div>
+eod;
+}
+
+  echo <<< eod
            </li>
        </ul>
    </div>
