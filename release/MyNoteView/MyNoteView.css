@@ -70,9 +70,13 @@ body{
 }
 .Other-comments-first #reply_2{
 	margin-top: 5px;
+  background-color: #f7f7f7;
+  color: #000000;
 }
 .Other-comments #reply_2{
 	margin-top: 5px;
+  background-color: #f7f7f7;
+  color: #000000;
 }
 .comment-button{
 	float:right;
