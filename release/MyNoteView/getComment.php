@@ -4,7 +4,7 @@
  *  HTML formate. Maybe be changed if in a different HTML format.
  *  @author Davin-Yu
  */
-
+ $me = $_SESSION['username'];
  if (empty($_GET["_note_id"])) {
    $Noteid = 1;    //For Testing
  } else {
@@ -29,22 +29,46 @@
                <div class="comment-content">
                    <p>$row[3]</p>
                </div>
-               <div id="show$num">
-    						<button type="button" id="reply" class="btn btn-primary" data-toggle="collapse"
-    							data-target="#Comment-Edit-box$num">Reply
-    						</button>
-                <div id="Comment-Edit-box$num" class ="collapse">
-                  <div class="form-group" id="commentAusers">
-                    <textarea class="form-control" name="_reply" id="comment-textarea-$num" rows="5"></textarea>
-                    <div class="comment-button" id="button-comment">
-                      <button type="button" id="reply_2" class="btn btn-primary btn-sm" onclick="">Reply</button>
+eod;
+  //------------if have note
+  $result2 = mysql_query("SELECT * FROM
+                          Replies WHERE comment_id = '$row[0]'", $connection);
+  if ($row2 = mysql_fetch_array($result2, MYSQL_NUM)) {
+    echo <<< eod
+    <div>
+      <p>
+        <i>
+        <hr>
+        &nbsp&nbsp&nbsp
+        <a href="../MyView/MyView.php">$me</a>
+        : $row2[3]
+        </i>
+      </p>
+    </div>
+eod;
+  } else {
+    echo <<< eod
+                 <div id="show$num">
+      						<button type="button" id="reply" class="btn btn-primary" data-toggle="collapse"
+      							data-target="#Comment-Edit-box$num">Reply
+      						</button>
+                  <form role="form" action="postReply.php" method="GET">
+                  <div id="Comment-Edit-box$num" class ="collapse">
+                    <div class="form-group" id="commentAusers">
+                      <textarea class="form-control" name="_reply_content" id="comment-textarea-$num" rows="5"></textarea>
+                      <div class="comment-button" id="button-comment">
+                        <button type="submit" id="reply_2" name="_comment_id" value = "$row[0]" class="btn btn-primary btn-sm" >Reply</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              <div>
-           </li>
-       </ul>
-   </div>
+                  </form>
+                <div>
+eod;
+  }
+    echo <<< eod
+    </li>
+    </ul>
+  </div>
 eod;
  }
  ?>

@@ -17,9 +17,13 @@
         VALUES('','$user_id','$commentid','$content')";
   $result=mysql_query($sql);
 
+  $result2 = mysql_query("SELECT * FROM
+                          Comments WHERE comment_id = '$commentid'", $connection);
+  $row2 = mysql_fetch_array($result2, MYSQL_NUM);
+
   if($result===true){
-    echo  "<script type='text/javascript'>alert('Reply Successfully');location.href='../MyNoteView/MyNoteView.php'</script>";
+    echo  "<script type='text/javascript'>alert('Reply Successfully');location.href='../MyNoteView/MyNoteView.php?_note_id=$row2[2]'</script>";
   }else{
-    echo "<script type='text/javascript'>alert('Failed');</script>".$sql;
+   echo "<script type='text/javascript'>alert('Failed');location.href='../MyNoteView/MyNoteView.php?_note_id=$row2[2]'</script>".$sql;
   }
 ?>
