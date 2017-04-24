@@ -57,11 +57,16 @@ body{
 	border-top: 1px solid #c4c4c4;
 }
 .Other-comments-first #reply{
-	margin-top: 5px;
+	margin-top: 4px;
 	margin-bottom:10px;
+  background-color: #f7f7f7;
+  color: #000000;
 }
 .Other-comments #reply{
-	margin-bottom:10px;
+  margin-top: 4px;
+  margin-bottom:10px;
+  background-color: #f7f7f7;
+  color: #000000;
 }
 .Other-comments-first #reply_2{
 	margin-top: 5px;
