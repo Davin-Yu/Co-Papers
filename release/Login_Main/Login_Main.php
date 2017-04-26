@@ -1,5 +1,5 @@
 <?php session_start();
-require("../testLogin.php"); ?>
+require("toMain.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,8 +32,8 @@ require("../testLogin.php"); ?>
 				<div class="center-block">
             <div class="Mainsearch">
                 <div class="center-block" id="abstract">
-                    <p>Discover scientific literature, <br>
-											 Publicize your own notes.</p>
+									<p>An Efficient Way to Organize&nbsp<br>
+										 Your Own Notes &nbsp&nbsp</p>
                 </div>
 								<form action="linker.php" class="center-block" id="Search-form" rol="search" method="POST">
                     <div class="form-group" id="searchKey">
@@ -53,7 +53,7 @@ require("../testLogin.php"); ?>
                     </div>
                     <div class="form-group" id="button">
                         <div class="center-block" id="search-button">
-                            <button type="submit" class="btn btn-primary btn-lg">Search Now</button>
+                            <button type="submit" class="btn btn-primary btn-lg">&nbsp&nbsp Explore! &nbsp&nbsp</button>
                         </div>
                     </div>
 	                </form>
