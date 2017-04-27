@@ -31,8 +31,8 @@
         <div class="center-block">
             <div class="Mainsearch">
                 <div class="center-block" id="abstract">
-                    <p>An Efficient Way to Organize&nbsp<br>
-											 Your Own Notes &nbsp&nbsp</p>
+                    <p>A Platform to Organize and Share&nbsp<br>
+											 Your Academic Notes&nbsp&nbsp&nbsp</p>
                 </div>
 								<form action="linker.php" class="center-block" id="Search-form" rol="search" method="POST">
                     <div class="form-group" id="searchKey">
