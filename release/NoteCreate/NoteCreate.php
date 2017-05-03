@@ -1,5 +1,8 @@
-<? session_start();
-require("../testLogin.php"); ?>
+<?php session_start();
+require("../testLogin.php");
+$ifPremium = 0;
+require("../Premium/checkPremium.php");
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -113,11 +116,17 @@ require("../testLogin.php"); ?>
                             </div>
                         </div>
                     </div>
+										<?php
+												if ($ifPremium == 1) {
+													echo <<< eod
+													<div class="form-group">
+														<label for="name">PDF</label>
+														<input type="file" name="_pdf" value="" /><br />
+													</div>
+eod;
+												}
+										 ?>
 
-										<div class="form-group">
-											<label for="name">PDF</label>
-											<input type="file" name="_pdf" value="" /><br />
-										</div>
                     <!--Note box-->
                     <div class="form-group">
                         <label for="name">Note</label>
@@ -129,6 +138,16 @@ require("../testLogin.php"); ?>
                             </div>
                         </div>
                     </div>
+
+										<?php
+										if ($ifPremium == 0) {
+											echo <<< eod
+											<br><br><br><br><br><br><br>
+											<div class="form-group">
+													<label for="ad"><a href="../Premium/goPremium.php" class="pull-right" target="_BLANK">Want to upload pdf file?</a></label>
+eod;
+										}
+										 ?>
 										<!--Bottom button-->
 										<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
 												<div class="container-fluid">
