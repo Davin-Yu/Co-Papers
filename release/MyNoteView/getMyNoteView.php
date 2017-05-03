@@ -21,4 +21,5 @@
   $_tag = $row[6];
   $_hot = $row[7];
   $_ifpublicize = $row[8];
+  $_ifpdf = $row[9];
  ?>

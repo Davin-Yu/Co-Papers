@@ -70,6 +70,15 @@ require("../testLogin.php"); ?>
                 <div class="container-fluid">
                     <div class="center-block" id="button-block">
                         <button type="button" class="btn btn-primary btn-lg" onclick="location.href='../MyNoteEdit/MyNoteEdit.php?_edit_note=<?php echo $Noteid; ?>'" id="button-Edit">Edit</button>
+												<?php
+														if ($_ifpdf == 1) {
+															$myname = $_SESSION['user_id'];
+															$name = "$myname"."and"."$Noteid".".pdf";
+															echo <<< eod
+															<button type="button" class="btn btn-primary btn-lg" onclick="window.open('../Uploadpdf/$name')" id="button-Edit">View PDF</button>
+eod;
+														}
+												 ?>
                     </div>
                 </div>
             </nav>
