@@ -2,7 +2,18 @@
   require("../connectDB.php");
   $result=mysql_query("SELECT * FROM Notes
 											 WHERE user_id = $_otherid");
-  while ($row=mysql_fetch_array($result)){
+  $numofresult = mysql_num_rows($result);
+  if (!empty($_GET["_page"])) {
+    $pagenum = $_GET["_page"];
+    for ($i=1; $i<$pagenum; $i++) {
+      for ($j=0; $j<5; $j++) {
+        $row=mysql_fetch_array($result);
+      }
+    }
+  }
+  $howmuch = 0;
+  while (($row=mysql_fetch_array($result)) && ($howmuch<5)){
+      $howmuch = $howmuch + 1;
       echo <<< eod
         <ul class="searched-notes-list">
           <li class="result">
@@ -25,6 +36,16 @@
           </li>
         </ul>
         <div class="Cut-off-line"></div>
+eod;
+  }
+  echo "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Page: ";
+  echo <<< eod
+    <a href="../OtherView/OtherView.php?_user_id=$_otherid"> 1 </a>
+eod;
+  for ($i=2; $i<=($numofresult/5)+1; $i++) {
+    echo <<< eod
+      |
+      <a href="../OtherView/OtherView.php?_user_id=$_otherid&_page=$i">$i</a>
 eod;
   }
 
