@@ -23,8 +23,20 @@
   $result=mysql_query($sql);
 
   if($result===true){
+
+    
+
+    if (is_uploaded_file($_FILES['_pdf']['tmp_name'])) {
+      if ($_FILES['_pdf']['type'] != "application/pdf") {
+        echo "<p>Please upload PDF File</p>";
+      } else {
+        $name = $user_id;
+        $result = move_uploaded_file($_FILES['_pdf']['tmp_name'], "../UploadPDF"."$name.pdf");
+      }
+    }
     echo  "<script type='text/javascript'>alert('Save Successfully');location.href='../MyView/MyView.php'</script>";
   }else{
     echo "<script type='text/javascript'>alert('Failed');</script>".$sql;
   }
+
 ?>

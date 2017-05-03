@@ -51,7 +51,7 @@ require("../testLogin.php"); ?>
             </div>
             <!--Form-->
             <div class="Create-Form">
-                <form role="form" action="insertNotetoDB.php" method="POST">
+                <form role="form" action="insertNotetoDB.php" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <!--Paper Title-->
                         <label for="name">Paper Title</label>
@@ -113,6 +113,11 @@ require("../testLogin.php"); ?>
                             </div>
                         </div>
                     </div>
+
+										<div class="form-group">
+											<label for="name">PDF</label>
+											<input type="file" name="_pdf" value="" /><br />
+										</div>
                     <!--Note box-->
                     <div class="form-group">
                         <label for="name">Note</label>
