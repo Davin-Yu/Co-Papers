@@ -17,6 +17,7 @@
   $ifpublicize=$_POST['_ifpublicize'];
 
   $note_content = htmlspecialchars($note_content, ENT_QUOTES);
+  require_once("../CheckDirtyWords/CheckDirtyWords.php");
 
   require("../connectDB.php");
   $sql="UPDATE Notes

@@ -17,6 +17,7 @@
   $ifpdf = 0;
 
   $note_content = htmlspecialchars($note_content, ENT_QUOTES);
+  require_once("../CheckDirtyWords/CheckDirtyWords.php");
 
   if (is_uploaded_file($_FILES['_pdf']['tmp_name'])) {
     if ($_FILES['_pdf']['type'] == "application/pdf") {
