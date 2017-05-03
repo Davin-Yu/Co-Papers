@@ -41,14 +41,14 @@ require("toMain.php"); ?>
                     </div>
                     <div class="form-group" id="topicsChoice">
                         <select class="form-control" name="_topic">
-													<option value = "Others">Others Topics</option>
-													<option value = "Biochamisry">Biochamisry</option>
 													<option value = "Computer Science">Computer Science</option>
+													<option value = "Biochamisry">Biochamisry</option>
 													<option value = "Chemical">Chemical</option>
 													<option value = "Literature">Literature</option>
 													<option value = "Math">Math</option>
 													<option value = "Medichine">Medicine</option>
 													<option value = "Physics">Physics</option>
+													<option value = "Others">Others Topics</option>
                         </select>
                     </div>
                     <div class="form-group" id="button">
