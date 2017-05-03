@@ -75,7 +75,7 @@ require("../testLogin.php"); ?>
 															$myname = $_SESSION['user_id'];
 															$name = "$myname"."and"."$Noteid".".pdf";
 															echo <<< eod
-															<button type="button" class="btn btn-primary btn-lg" onclick="window.open('../Uploadpdf/$name')" id="button-Edit">View PDF</button>
+															<button type="button" class="btn btn-primary btn-lg" onclick="window.open('../UploadPDF/$name')" id="button-Edit">View PDF</button>
 eod;
 														}
 												 ?>
