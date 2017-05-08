@@ -7,11 +7,11 @@
 * @return print 'successful' if succeed inserting
 */
   session_start();
-  $Uname = $_GET["_username"];
-  $Upass = MD5($_GET["_password"]);   //encrpt the userpassword
-  $Umail = $_GET["_mail"];
-  $Ubio = $_GET["_bio"];
-  if ($Upass != MD5($_GET["_password2"])) {
+  $Uname = $_POST["_username"];
+  $Upass = MD5($_POST["_password"]);   //encrpt the userpassword
+  $Umail = $_POST["_mail"];
+  $Ubio = $_POST["_bio"];
+  if ($Upass != MD5($_POST["_password2"])) {
     echo  "<script type='text/javascript'>alert('Password Re-enter Error');location.href='UserSignUp.php'</script>";
   } else {
     require("../connectDB.php");

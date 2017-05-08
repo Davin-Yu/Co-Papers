@@ -37,7 +37,7 @@
             </div>
             <!--Form-->
             <div class="Create-Form">
-                <form role="form" action="UserSignUpDB.php" method="GET">
+                <form role="form" action="UserSignUpDB.php" method="POST">
                     <div class="form-group">
                         <!--UserName-->
                         <label for="name">UserName</label>

@@ -48,7 +48,7 @@
         <div class="center-block">
         	<div class="Page-Title">
         		<p>Search</p>
-        		<form action="getResult.php" class="form-inline navbar-form" id="search-form" rol="search" method="GET">
+        		<form action="../MainPage/linker.php" class="form-inline navbar-form" id="search-form" rol="search" method="POST">
         			<div class="form-group">
         				<select class="form-control col-lg-5" name="_topic" onchange="updateWeb(this.value)">
                   <option selected="selected" value = "Computer Science">Computer Science</option>
