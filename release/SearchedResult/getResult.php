@@ -5,7 +5,7 @@
     $topic = $_GET["_topic"];
   }
   if (empty($_GET["_keyword"])) {
-    $keywords = "yingle";         //test
+    $keywords = " ";         //test
   } else {
     $keywords = $_GET["_keyword"];
   }

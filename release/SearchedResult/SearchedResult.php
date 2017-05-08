@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="SearchedResults.css">
 	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script src="getResult.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -47,21 +48,21 @@
         <div class="center-block">
         	<div class="Page-Title">
         		<p>Search</p>
-        		<form action="linker.php" class="form-inline navbar-form" id="search-form" rol="search" method="POST">
+        		<form action="getResult.php" class="form-inline navbar-form" id="search-form" rol="search" method="GET">
         			<div class="form-group">
-        				<select class="form-control col-lg-5" name="_topic">
-									<option select="selected" value = "Others">Others Topics</option>
+        				<select class="form-control col-lg-5" name="_topic" onchange="updateWeb(this.value)">
+                  <option selected="selected" value = "Computer Science">Computer Science</option>
 									<option value = "Biochemisry">Biochemisry</option>
-									<option value = "Computer Science">Computer Science</option>
 									<option value = "Chemical">Chemical</option>
 									<option value = "Literature">Literature</option>
 									<option value = "Math">Math</option>
 									<option value = "Medical">Medicine</option>
 									<option value = "Physics">Physics</option>
-						</select>
+                  <option value = "Others">Others Topics</option>
+						    </select>
         			</div>
         			<div class="form-group">
-        				<input type="text" class="form-control" name="_keyword" placeholder="Keywords" style="width: 300px;" />
+        				<input type="text" class="form-control" name="_keyword" placeholder="Keywords" style="width: 300px;" onkeyup="showPage(this.value)"/>
         			</div>
         			<div class="form-group">
         				<button type="submit" class="btn btn-default">Search</button>
@@ -72,9 +73,9 @@
                 <img src="search-logo.png" alt="search-logo">
           </div>
             <!--Results Box-->
-						<div class="Search-Results">
-						<?php require("getResult.php"); ?>
-					</div>
+						<div class="Search-Results" id="ajaxget">
+						 <?php require("getResult.php"); ?>
+					  </div>
         </div>
 	</div>
 </body>
