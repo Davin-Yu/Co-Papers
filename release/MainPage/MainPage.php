@@ -111,7 +111,7 @@
                             <h1 class="text-center text-primary">Sign In</h1>
                         </div>
                         <div class="modal-body">
-                            <form action="../UserLogin/UserLoginDB.php" method="GET" class="form col-md-12 center-block">
+                            <form action="../UserLogin/UserLoginDB.php" method="POST" class="form col-md-12 center-block">
                                 <div class="form-group">
                                     <input type="text" class="form-control input-lg" placeholder="Username" name="_username" required="required">
                                 </div>

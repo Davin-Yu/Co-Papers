@@ -13,8 +13,8 @@
     echo  "<script type='text/javascript'>alert('You have alreadly Logged in');location.href='../Login_Main/Login_Main.php'</script>";
     exit;
   }
-  $Uname = $_GET["_username"];
-  $Upass = MD5($_GET["_password"]);
+  $Uname = $_POST["_username"];
+  $Upass = MD5($_POST["_password"]);
   require("../connectDB.php");
   $result = mysql_query ("SELECT * FROM
                           Users", $connection);
