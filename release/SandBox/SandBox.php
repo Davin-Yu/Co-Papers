@@ -69,7 +69,7 @@ eod;
 
       <div class="Create-Form" >
         <div class="textarea">
-          <p> Refresh Your Mind in Two Minutes </p>
+          <p> Draw Your Work while See Others' Work </p>
         </div>
         <div class="textarea" id="pangzi">
         <?php
