@@ -101,6 +101,7 @@
                     <span>© 2017 Co-Papers. All rights reserved</span>
                     <br>
                     <span><a href="../AboutUs/AboutUs.html" target="_blank">About us</a></span>
+                    <span><a href="../SandBox/SandBox.php" target="_blank">SandBox</a></span>
                 </div>
             </div>
             <!--Main container-->

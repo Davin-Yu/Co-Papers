@@ -96,7 +96,8 @@ require("toMain.php"); ?>
         <div class="center-block" id="footer">
             <div class="footer-span">
                 <p><a href="../AboutUs/AboutUs.html" target="_blank">About us</a> |
-									 <a href="../Feedback/Feedback.php" target="_blank">Feedback</a></p>
+									 <a href="../Feedback/Feedback.php" target="_blank">Feedback</a> |
+								   <a href="../SandBox/SandBox.php" target="_blank">SandBox</a></p>
             </div>
             <div class="footer-porperty">
                 <p>© 2017 Co-Papers. All rights reserved.</p>
