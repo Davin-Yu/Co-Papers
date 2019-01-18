@@ -1,18 +1,3 @@
-# Literature Review System - Dev
-## CSE208 Group Project
-
-###  Goal
-An efficient way to organize your reading achievements and make use of collective intelligence
-
-###  Tasks
-#### Variable Define
-Reminder: The variable name should add _ before real name.
-
-#### Database Design
-You can directly import the database 'grouppj' from the database folder.
-
-![Alt text](/pic/Database.png)
-
-### License
-This Project is distributed under the GUN General Public License v3.0 (GPLv3)
+# Co-Papers
+Co-papers is an online system for managing bibliographies and reading notes. It supports basic functions like read, write, search, and share. Users can also register and log into the system to comment on others' notes and follow their favorite users. For more information, please refer to our [final report](https://github.com/Davin-Yu/Co-Papers/blob/master/report/CSE208-Group4-FinalReport1.0.pdf) for this project :)
 
